@@ -1,7 +1,7 @@
 ---
 # Course title, summary, and position.
-linktitle: Command Line Cookbook
-summary: Introduction and summary of most basic tools and commands to do everyday tasks, with a focus on genomic studies.
+linktitle: R for Biostatistics
+summary: R and statistics tools
 weight: 1
 
 # Page metadata.
