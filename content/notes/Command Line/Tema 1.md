@@ -1,6 +1,6 @@
 ---
-title: Tema 1
-linktitle: Tema 1
+title: Introduction to Linux
+linktitle: Introduction to Linux
 toc: true
 type: docs
 date: "2019-05-05T00:00:00+01:00"
@@ -14,18 +14,100 @@ menu:
 weight: 1
 ---
 
-In this tutorial, I'll share my top 10 tips for getting started with Academic:
 
-## Tip 1
+Users and Access to the system
+------------------------------
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.
+#### Password
 
-Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.
+Change the user’s password
 
-Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.
+    $ passwd
 
-Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.
+#### Users
 
-Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.
+Switch to a different user
 
- sagittis pulvinar purus, sed porta quam laoreet at.
+    $ su [- username] 
+      *  Username becomes the specified user
+      *  If its omitted it becomes the superuser
+
+#### Finish the session
+
+You can exit the session by using one of the following commands
+
+    $ exit
+
+    $ logout
+
+Basic Commands of the System
+----------------------------
+
+#### Date
+
+Define and show the date and time
+
+    $ date [+format]
+
+       *  %a Abbreviated weekday name (Sun)
+       *  %A weekday name (Sun)
+       *  %D Date [mm/dd/yy]
+       *  %H Hour [00 a 23]
+       *  %m Month [01 a 12]
+       *  %h Month [Jan]
+       *  %y Year [98]
+       *  %w Day of the week [Sunday = 0]
+       *  %d Day of the month (01 a 31)
+       *  %j Day of the year [001 a 366]
+       *  %M Minuto [00 a 59]
+       *  %S Second [00 a 59]
+       *  %T Hora [HH:MM:SS]
+       *  %r Time with a.m./p.m. [11:53:29 AM]
+       *  %t insert tabulator
+       *  %n insert new line
+
+#### Time
+
+Shows the CPU time and real time elapsed in the execution of an order
+
+    $ time [command_line]*
+
+#### Echo
+
+Echoes the arguments (allows standard C escape sequences). Allows you to
+view information on the screen: \* Character strings \* Variable values
+\* Order execution results
+
+    $ echo [-n] arg
+       *  -n: Does not include line break at the end
+
+#### Uname
+
+Prints information about the system name
+
+    $ uname [-snrvmq]
+
+      * -s: Print the name of the operating system
+      * -n: Print the node name of the computer
+      * -r: Print the operating system revision number
+      * -v: Print the version number of the operating system
+      * -m: Print the computer type
+      * -a: Print all the above information
+
+#### Who
+
+Print information about users who have open sessions
+
+    $ who [am I]
+
+#### Sleep
+
+Suspend execution for the specified time
+
+    $ sleep [seconds]
+
+#### Cal
+
+Print the calendar of the indicated month and year
+
+    $ cal
