@@ -60,7 +60,7 @@ subtitle = ""
   # text_color_light = true  
   
 [advanced]
- # Custom CSS. 
+ # Custom CSS//localhost:34931/. 
  css_style = ""
  
  # CSS class.
