@@ -17,7 +17,7 @@ type: docs  # Do not modify.
 # - weight: Position of link in menu.
 menu:
   example:
-    name: R for Biostatist
+    name: R for Biostatistics
     weight: 1
 ---
 

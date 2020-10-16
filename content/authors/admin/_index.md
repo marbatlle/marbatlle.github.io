@@ -70,4 +70,4 @@ user_groups:
 ---
 Hello.
 
-I'm a biotechnologist with a great interest in learning how to apply Bioinformatics to Precision Medicine. The aim of this site is to summary all the notes and resources curated during this learning path.
+I'm a biotechnologist with a great interest in learning how to apply Bioinformatics to Precision Medicine. The aim of this site is to summarize all the notes and resources curated during this learning path.

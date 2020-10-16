@@ -1,6 +1,6 @@
 ---
-title: Introduction to Linux
-linktitle: Introduction to Linux
+title: 1. Intro to Linux
+linktitle: 1. Intro to Linux
 toc: true
 type: docs
 date: "2019-05-05T00:00:00+01:00"
@@ -15,7 +15,7 @@ weight: 1
 ---
 
 
-Users and Access to the system
+1.1. Users and Access to the system
 ------------------------------
 
 #### Password
@@ -40,7 +40,7 @@ You can exit the session by using one of the following commands
 
     $ logout
 
-Basic Commands of the System
+1.2. Basic Commands of the System
 ----------------------------
 
 #### Date
