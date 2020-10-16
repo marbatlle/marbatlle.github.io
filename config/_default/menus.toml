@@ -9,19 +9,12 @@
   weight = 10
 
 [[main]]
-  name = "Posts"
-  url = "#posts"
-  weight = 20
-
-[[main]]
-  name = "Projects"
-  url = "#projects"
+  name = "Notes"
+  url = "#courses"
   weight = 30
 
-[[main]]
-  name = "Publications"
-  url = "#featured"
-  weight = 40
+
+
 
 
 # Link to a PDF of your resume/CV from the menu.
@@ -30,3 +23,12 @@
 #    name = "CV"
 #    url = "files/cv.pdf"
 #    weight = 70
+# [[main]]
+#   name = "Posts"
+#  url = "#posts"
+#  weight = 20
+# 
+# [[main]]
+#  name = "Publications"
+#  url = "#featured"
+#  weight = 40

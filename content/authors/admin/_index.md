@@ -15,10 +15,10 @@ role: Bioinformatics Student
 # Organizations/Affiliations
 organizations:
 - name: Instituto de Salud Carlos III
-  url: www.masterbioinformatica.com
+  url: http://www.masterbioinformatica.com
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+bio: Biotechnologist with a great interest in learning how to apply Bioinformatics to Precision Medicine
 
 interests:
 - Genomic Data Science
@@ -70,4 +70,4 @@ user_groups:
 ---
 Hello.
 
-I'm a biotechnologist with a great interest in learning how to apply Bioinformatics to Precision Medicine. The aim of this site is to summary all the notes and resources curated during this learning journey to achieve this goal.
+I'm a biotechnologist with a great interest in learning how to apply Bioinformatics to Precision Medicine. The aim of this site is to summary all the notes and resources curated during this learning path.
