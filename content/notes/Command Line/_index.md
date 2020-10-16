@@ -1,11 +1,11 @@
 ---
 # Course title, summary, and position.
 linktitle: Command Line
-summary: Basic tools and commands
+summary: Summary of most basic tools and commands to do everyday tasks, with a focus on genomic studies. 
 weight: 1
 
 # Page metadata.
-title: Overview
+title: Command Line
 date: "2018-09-09T00:00:00Z"
 lastmod: "2018-09-09T00:00:00Z"
 draft: false  # Is this a draft? true/false
@@ -17,6 +17,7 @@ type: docs  # Do not modify.
 # - weight: Position of link in menu.
 menu:
   example:
-    name: Command Line Overview
+    name: Command Line
     weight: 1
 ---
+mmmmmmmmmmm
