@@ -1,6 +1,6 @@
 ---
-title: Tema 3
-linktitle: Tema 3
+title: 3. Process Management
+linktitle: 3. Process Management
 toc: true
 type: docs
 date: "2019-05-05T00:00:00+01:00"
@@ -14,16 +14,55 @@ menu:
 weight: 3
 ---
 
-In this tutorial, I'll share my top 10 tips for getting started with Academic:
+Process Management Orders
+-------------------------
 
-## Tip 3
+### Process Status
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.
+View a list of the active processes on the machine
 
-Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.
+    $ ps [-efl]
+       * -e: displays all running processes
+       * -f: displays detailed information of the processes
+       * -l: displays even more detailed information about the processes
 
-Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.
+To see all whose name contains the string <word>:
 
-Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.
+    $ pgrep | -l word
 
-Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.
+### Kill Command
+
+It is used to cancel the execution of certain processes whose execution
+is not desired to continue:
+
+    $ kill [-signal] PID
+    * PID: identifier of the process or not of the task that we want to stop
+    * signal: signal to send (by default it is SIGTERM = 15, if the process does not end with this signal, it will be necessary to send it the SIGKILL (9) signal)
+
+### pkill Command
+
+It allows killing processes indicating the name of the process, instead
+of its PID pkill sends a SIGTERM signal to the specified process.
+
+    $ pkill [-U username] name_process
+
+### job Command
+
+The job order allows you to see the list of active jobs at that moment.
+
+    $ jobs
+
+### Suspension of work
+
+Any job (foreground or background) can be temporarily suspended and then
+resumed from where it left off. To suspend a process that is running in
+the foreground:
+
+    $ [Ctrl] -Z
+
+### Resuming jobs
+
+Any suspended job can be resumed, in the background or foreground.
+
+    $ bg %num_job: resumes a suspended job in the background
+    $ fg %num_job: resumes in the foreground, it also serves to bring a work from the background to the foreground
