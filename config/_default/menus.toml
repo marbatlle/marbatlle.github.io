@@ -9,8 +9,13 @@
   weight = 10
 
 [[main]]
-  name = "Notes"
+  name = "Mar's Notes"
   url = "notes/"
+  weight = 30
+
+[[main]]
+  name = "Courses"
+  url = "courses/"
   weight = 30
 
 
