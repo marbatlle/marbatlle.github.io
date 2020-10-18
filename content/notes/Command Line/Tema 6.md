@@ -1,6 +1,6 @@
 ---
-title: 6. Command Interpreter and User Configuration
-linktitle: 6. Command Interpreter and User Configuration
+title: 6. User Configuration
+linktitle: 6. User Configuration
 toc: true
 type: docs
 date: "2019-05-05T00:00:00+01:00"
