@@ -1,5 +1,5 @@
-The dataset
-===========
+Load libraries
+--------------
 
     # Load libraries
     library(knitr)
@@ -9,12 +9,17 @@ The dataset
     library(DataExplorer)
     library(nortest)
 
-    # Read the data
-    data_bajo_peso <- read.csv("~/Documentos/bioestadistica/datos/Bajo peso al nacer.csv", sep=";") %>%
-      data.frame()
+The dataset: Low weight at birth
+--------------------------------
 
+**Goal of the study**: establish which factors are associated with low
+weight on newborns, present in women who have given birth.
+
+    # Read the data
+    low_weight_births <- read.csv("~/Documentos/bioestadistica/datos/Bajo peso al nacer.csv", sep=";") %>%
+      data.frame()
     # Let's get an idea of what we're working with 
-    glimpse(data_bajo_peso)
+    glimpse(low_weight_births)
 
     ## Rows: 189
     ## Columns: 10
@@ -29,35 +34,57 @@ The dataset
     ## $ irr_urin <int> 1, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, …
     ## $ visi_med <int> 0, 2, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 1, 0, 2, 2, 0, 0, 0, …
 
-and clean the data
+As you can see, the set of variables present in this dataset contains
+are described in english, to make it easier to understand, here you can
+see the meaning of each variable and its corresponding categories: \*
+**id**: identification \* **bajo\_pes**: low weight at birth
+(categories: 0 = normal weight (&gt;= 2500g), 1 = low weight (&lt;
+2500g)) \* **edad**: age \* **peso**: weight \* **raza**: race
+(categories: 1 = white, 2 = black, 3 = other) \* **fumador**: smoker
+(categories: 0 = no, 1 = yes) \* **part\_pre**: premature birth
+(categories: 0 = no, 1 = 1 birth, 2 = 2 births, 3 = more than 3) \*
+**hta**: hipertension (categories: 0 = no, 1 = yes) \* **irr\_urin**:
+urinary irritability (categories: 0 = no, 1 = yes) \* **visi\_med**:
+number of medical visits
+
+To condinue with the analysis, we we’ll clean the data while modifying
+it’s variable names and categories.
 
     # Clean and adequate the data
-    data  <- data_bajo_peso %>%
+    data  <- low_weight_births %>%
       drop_na() %>%
-      mutate(bajo_pes=factor(bajo_pes,labels=c("normal","bajo")),
-             raza=factor(raza,labels=c("blanca","negra","otras")),
-             fumador=factor(fumador,labels=c("no", "si")),
-             part_pre=factor(part_pre,labels=c("no","1 parto","2 partos","más de 3 partos")),
-             hta=factor(hta,labels=c("no","si")),
-             irr_urin=factor(irr_urin,labels=c("no","si")))
+      rename(low_weight = bajo_pes,
+             age = edad,
+             weight = peso,
+             race = raza,
+             smoker = fumador,
+             prem_birth = part_pre,
+             urin_irr = irr_urin,
+             med_vis = visi_med) %>%
+      mutate(low_weight = factor (low_weight, labels = c("normal","low")),
+             race = factor (race, labels = c("white","black","others")),
+             smoker = factor (smoker, labels = c("no", "yes")),
+             prem_birth = factor (prem_birth, labels=c("no","1_birth","2_births","more2_births")),
+             hta = factor (hta, labels=c("no","yes")),
+             urin_irr = factor (urin_irr, labels=c("no","yes")))
 
     glimpse(data)
 
     ## Rows: 189
     ## Columns: 10
-    ## $ id       <int> 4, 10, 11, 13, 15, 16, 17, 18, 19, 20, 22, 23, 24, 25, 26, 2…
-    ## $ bajo_pes <fct> bajo, bajo, bajo, bajo, bajo, bajo, bajo, bajo, bajo, bajo, …
-    ## $ edad     <int> 28, 29, 34, 25, 25, 27, 23, 24, 24, 21, 32, 19, 25, 16, 25, …
-    ## $ peso     <dbl> 54.43164, 58.96761, 84.82264, 47.62769, 38.55575, 68.03955, …
-    ## $ raza     <fct> otras, blanca, negra, otras, otras, otras, otras, negra, otr…
-    ## $ fumador  <fct> si, no, si, no, no, no, no, no, no, si, si, si, no, no, si, …
-    ## $ part_pre <fct> 1 parto, no, no, 1 parto, no, no, no, 1 parto, no, no, no, 2…
-    ## $ hta      <fct> no, no, si, si, no, no, no, no, si, si, no, no, no, no, no, …
-    ## $ irr_urin <fct> si, si, no, no, si, no, si, no, no, no, no, si, no, no, no, …
-    ## $ visi_med <int> 0, 2, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 1, 0, 2, 2, 0, 0, 0, …
+    ## $ id         <int> 4, 10, 11, 13, 15, 16, 17, 18, 19, 20, 22, 23, 24, 25, 26,…
+    ## $ low_weight <fct> low, low, low, low, low, low, low, low, low, low, low, low…
+    ## $ age        <int> 28, 29, 34, 25, 25, 27, 23, 24, 24, 21, 32, 19, 25, 16, 25…
+    ## $ weight     <dbl> 54.43164, 58.96761, 84.82264, 47.62769, 38.55575, 68.03955…
+    ## $ race       <fct> others, white, black, others, others, others, others, blac…
+    ## $ smoker     <fct> yes, no, yes, no, no, no, no, no, no, yes, yes, yes, no, n…
+    ## $ prem_birth <fct> 1_birth, no, no, 1_birth, no, no, no, 1_birth, no, no, no,…
+    ## $ hta        <fct> no, no, yes, yes, no, no, no, no, yes, yes, no, no, no, no…
+    ## $ urin_irr   <fct> yes, yes, no, no, yes, no, yes, no, no, no, no, yes, no, n…
+    ## $ med_vis    <int> 0, 2, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 1, 0, 2, 2, 0, 0, 0…
 
-Estadística Descriptiva
-=======================
+Descriptive Statistics
+======================
 
 Single Variable Analysis
 ------------------------
@@ -74,14 +101,14 @@ Single Variable Analysis
 As an example and guide, we analize the response variable; Bajo peso al
 nacer:
 
-    bajo_peso <- data$bajo_pes
+    low_weight <- data$low_weight
 
     # Absolute frequencies: Number of observations presented by each of the categories
-    t1 <- table(bajo_peso)
+    t1 <- table(low_weight)
     t1
 
-    ## bajo_peso
-    ## normal   bajo 
+    ## low_weight
+    ## normal    low 
     ##    130     59
 
     # # Relative frequencies: Quotient between absolute frequencies and sample size, expressed in proportions or percentages
@@ -89,8 +116,8 @@ nacer:
     p1_round <- round(p1*100, dig=2)
     p1_round
 
-    ## bajo_peso
-    ## normal   bajo 
+    ## low_weight
+    ## normal    low 
     ##  68.78  31.22
 
 Using the DataExplorer package, we can easily plot the frequency
@@ -98,13 +125,13 @@ distribution of all discrete variables:
 
     plot_bar(data)
 
-![](1_Descriptive_Statistics_files/figure-markdown_strict/unnamed-chunk-4-1.png)
+![](1_Descriptive_Statistics_files/figure-markdown_strict/unnamed-chunk-5-1.png)
 
 #### Graphics
 
-As in the previous example, we analize the response variable; Bajo peso
-al nacer, as a guide. Also, have in mind that to execute graphs in a
-terminal, we always need to write the function dev.new() first
+As in the previous example, we analize the response variable; *low
+weight at birth*, as a guide. Also, have in mind that to execute graphs
+in a terminal, we always need to write the function dev.new() first
 
     # Sectors diagrams: Graphic representation in the form of a circle with areas proportional to theabsolute or relative frequency of each category
     dev.new()
@@ -117,7 +144,7 @@ terminal, we always need to write the function dev.new() first
     dev.new()
     par(mfrow=c(1,2))
     barplot(t1)
-    barplot(t1, col=c("red","blue"), main="Bajo peso al nacer", 
+    barplot(t1, col=c("red","blue"), main="Low weight at birth", 
             names.arg=paste(names(t1), " (", round( p1 * 100, dig=2),"%)", sep=""))
 
 ### Description of a Continuous Variable
@@ -127,10 +154,10 @@ terminal, we always need to write the function dev.new() first
 
 #### Summary measures of central tendency
 
-As an example and guide, we analize the variable Edad. \* *Mean:* This
+As an example and guide, we analize the variable *age*^. \* *Mean:* This
 measures describes the arithmetic of the sample:
 
-    mean(data$edad)
+    mean(data$age)
 
     ## [1] 23,2381
 
@@ -139,7 +166,7 @@ measures describes the arithmetic of the sample:
 
 <!-- -->
 
-    median(data$edad)
+    median(data$age)
 
     ## [1] 23
 
@@ -157,7 +184,7 @@ Pp value such that a proportion p of data values &lt;= Pp.
 
 <!-- -->
 
-    quantile(data$edad, c(0.10,0.25,0.50,0.75,0.90))
+    quantile(data$age, c(0.10,0.25,0.50,0.75,0.90))
 
     ## 10% 25% 50% 75% 90% 
     ##  17  19  23  26  31
@@ -176,7 +203,7 @@ contain an important parameter to treat missing values; na.rm=TRUE.
 
 <!-- -->
 
-    var(data$edad)
+    var(data$age)
 
     ## [1] 28,07599
 
@@ -185,7 +212,7 @@ contain an important parameter to treat missing values; na.rm=TRUE.
 
 <!-- -->
 
-    sd(data$edad)
+    sd(data$age)
 
     ## [1] 5,298678
 
@@ -194,7 +221,7 @@ contain an important parameter to treat missing values; na.rm=TRUE.
 
 <!-- -->
 
-    100 * abs(sd(data$edad) / mean(data$edad))
+    100 * abs(sd(data$age) / mean(data$age))
 
     ## [1] 22,80169
 
@@ -202,7 +229,7 @@ contain an important parameter to treat missing values; na.rm=TRUE.
 
 <!-- -->
 
-    range(data$edad)
+    range(data$age)
 
     ## [1] 14 45
 
@@ -211,7 +238,7 @@ contain an important parameter to treat missing values; na.rm=TRUE.
 
 <!-- -->
 
-    IQR(data$edad)
+    IQR(data$age)
 
     ## [1] 7
 
@@ -220,7 +247,7 @@ contain an important parameter to treat missing values; na.rm=TRUE.
 
 <!-- -->
 
-    mad(data$edad)
+    mad(data$age)
 
     ## [1] 5,9304
 
@@ -236,20 +263,20 @@ contain an important parameter to treat missing values; na.rm=TRUE.
 <!-- -->
 
     par(mfrow=c(1,2))
-    hist(data$edad)
-    hist(data$edad, col="red", main="Histogram of Age", 
+    hist(data$age)
+    hist(data$age, col="red", main="Histogram of Age", 
                   xlab="Age", ylab="Frequency",
                   xlim=c(10,50), breaks=seq(10,50, by=2))
 
-![](1_Descriptive_Statistics_files/figure-markdown_strict/unnamed-chunk-16-1.png)
+![](1_Descriptive_Statistics_files/figure-markdown_strict/unnamed-chunk-17-1.png)
 \* *Boxplot:* Graphic based on the distribution of the quartils
 (including median), with an easy identification of the outliers values.
 
     par(mfrow=c(1,2))
-    boxplot(data$edad)
-    boxplot(data$edad, col="red", main="Boxplot of Age", xlab="Age")
+    boxplot(data$age)
+    boxplot(data$age, col="red", main="Boxplot of Age", xlab="Age")
 
-![](1_Descriptive_Statistics_files/figure-markdown_strict/unnamed-chunk-17-1.png)
+![](1_Descriptive_Statistics_files/figure-markdown_strict/unnamed-chunk-18-1.png)
 
 Using the DataExplorer package, we can easily and quickly create
 histograms and density plots to analyze all continuous variables present
@@ -258,12 +285,12 @@ in the study.
     # View histogram of all continuous variables
     plot_histogram(data)
 
-![](1_Descriptive_Statistics_files/figure-markdown_strict/unnamed-chunk-18-1.png)
+![](1_Descriptive_Statistics_files/figure-markdown_strict/unnamed-chunk-19-1.png)
 
     # View estimated density distribution of all continuous variables
     plot_density(data)
 
-![](1_Descriptive_Statistics_files/figure-markdown_strict/unnamed-chunk-18-2.png)
+![](1_Descriptive_Statistics_files/figure-markdown_strict/unnamed-chunk-19-2.png)
 
 ### Summary Function
 
@@ -273,18 +300,18 @@ for continuous variables \* Number of missings of each variable, if any
 
     summary(data)
 
-    ##        id          bajo_pes        edad            peso            raza   
-    ##  Min.   :  4,0   normal:130   Min.   :14,00   Min.   : 36,29   blanca:96  
-    ##  1st Qu.: 68,0   bajo  : 59   1st Qu.:19,00   1st Qu.: 49,90   negra :26  
-    ##  Median :123,0                Median :23,00   Median : 54,89   otras :67  
+    ##        id         low_weight       age            weight           race   
+    ##  Min.   :  4,0   normal:130   Min.   :14,00   Min.   : 36,29   white :96  
+    ##  1st Qu.: 68,0   low   : 59   1st Qu.:19,00   1st Qu.: 49,90   black :26  
+    ##  Median :123,0                Median :23,00   Median : 54,89   others:67  
     ##  Mean   :121,1                Mean   :23,24   Mean   : 58,88              
     ##  3rd Qu.:176,0                3rd Qu.:26,00   3rd Qu.: 63,50              
     ##  Max.   :226,0                Max.   :45,00   Max.   :113,40              
-    ##  fumador             part_pre   hta      irr_urin    visi_med     
-    ##  no:115   no             :159   no:177   no:161   Min.   :0,0000  
-    ##  si: 74   1 parto        : 24   si: 12   si: 28   1st Qu.:0,0000  
-    ##           2 partos       :  5                     Median :0,0000  
-    ##           más de 3 partos:  1                     Mean   :0,7937  
+    ##  smoker           prem_birth   hta      urin_irr     med_vis      
+    ##  no :115   no          :159   no :177   no :161   Min.   :0,0000  
+    ##  yes: 74   1_birth     : 24   yes: 12   yes: 28   1st Qu.:0,0000  
+    ##            2_births    :  5                       Median :0,0000  
+    ##            more2_births:  1                       Mean   :0,7937  
     ##                                                   3rd Qu.:1,0000  
     ##                                                   Max.   :6,0000
 
@@ -301,12 +328,13 @@ according to a normal distribution, and this must be checked
 
 <!-- -->
 
-    shapiro.test(data$edad)
+    # Our sample is larger than 50, so this wouldn't be the best choice, but we'll still see the command.
+    shapiro.test(data$age)
 
     ## 
     ##  Shapiro-Wilk normality test
     ## 
-    ## data:  data$edad
+    ## data:  data$age
     ## W = 0,95977, p-value = 3,189e-05
 
 -   Kolmogorov-Smirnov test with correction: Large samples (&gt; 30,&gt;
@@ -315,12 +343,12 @@ according to a normal distribution, and this must be checked
 
 <!-- -->
 
-    lillie.test(data$edad)
+    lillie.test(data$age)
 
     ## 
     ##  Lilliefors (Kolmogorov-Smirnov) normality test
     ## 
-    ## data:  data$edad
+    ## data:  data$age
     ## D = 0,094517, p-value = 0,000303
 
 -   In both cases we reject the hypothesis of normality for p-values
@@ -334,10 +362,10 @@ according to a normal distribution, and this must be checked
 
 <!-- -->
 
-    qqnorm(data$edad, main="Normal Q-Q Plot - Edad")
-    qqline(data$edad)
+    qqnorm(data$age, main="Normal Q-Q Plot - Age")
+    qqline(data$age)
 
-![](1_Descriptive_Statistics_files/figure-markdown_strict/unnamed-chunk-22-1.png)
+![](1_Descriptive_Statistics_files/figure-markdown_strict/unnamed-chunk-23-1.png)
 
 Using the DataExplorer package, we can easily and quickly create qq
 plots to analyse the normality of all continuous variables present in
@@ -346,7 +374,7 @@ the study.
     # View quantile-quantile plot of all continuous variables
     plot_qq(data)
 
-![](1_Descriptive_Statistics_files/figure-markdown_strict/unnamed-chunk-23-1.png)
+![](1_Descriptive_Statistics_files/figure-markdown_strict/unnamed-chunk-24-1.png)
 
 ### Transformations of a variable
 
