@@ -1,6 +1,6 @@
 ---
-title: Descriptive Statistics
-linktitle: 1. Descriptive Statistics
+title: Single Variable Analysis
+linktitle: 1. One Variable
 toc: true
 type: docs
 date: "2019-05-05T00:00:00+01:00"
@@ -13,22 +13,26 @@ menu:
 # Prev/next pager order (if `docs_section_pager` enabled in `params.toml`)
 weight: 2
 ---
+## Summary
 
+1. Summary()
+2. Categorical Variable
+  * Absolute freq / Relative Frequencies (%)
+  * Pie or Barplot graphs
+3. Continuous Variable -> Normality Test
+  * ND -> Mean and SD
+  * NND -> Median, interquantile Range
+  * Histogram or Boxplot
 
-Descriptive Statistics
-======================
-
-Single Variable Analysis
-------------------------
-
-### Description of a Discrete Variable
+ 
+## Description of a Discrete Variable
 
 -   Number of predetermined finite categories. Alphabetic or numeric
     codes
 -   Describe a quality of the sample
 -   Ordinal variables: the categories have a natural order
 
-#### Summary Measures
+### Summary Measures
 
 As an example and guide, we analize the response variable; Bajo peso al
 nacer:
@@ -59,7 +63,7 @@ distribution of all discrete variables:
 
 ![](1_Descriptive_Statistics_files/figure-markdown_strict/unnamed-chunk-5-1.png)
 
-#### Graphics
+### Graphics
 
 As in the previous example, we analize the response variable; *low
 weight at birth*, as a guide. Also, have in mind that to execute graphs
@@ -79,12 +83,12 @@ in a terminal, we always need to write the function dev.new() first
     barplot(t1, col=c("red","blue"), main="Low weight at birth", 
             names.arg=paste(names(t1), " (", round( p1 * 100, dig=2),"%)", sep=""))
 
-### Description of a Continuous Variable
+## Description of a Continuous Variable
 
 -   Variables measured on a numerical scale
 -   Defined range: minimum and maximum
 
-#### Summary measures of central tendency
+### Summary measures of central tendency
 
 As an example and guide, we analize the variable *age*^. \* *Mean:* This
 measures describes the arithmetic of the sample:
@@ -105,7 +109,7 @@ measures describes the arithmetic of the sample:
 The median is a robust estimator because it is not as sensitive as the
 mean to distant values.
 
-#### Position or location measurements
+### Position or location measurements
 
 The quantile or percentile of order p of a distribution (0 &lt;p &lt;1):
 Pp value such that a proportion p of data values &lt;= Pp.
@@ -125,7 +129,7 @@ The median and the quartiles Q1 and Q3 divide the observations into 4
 parts that they contain 25% of the data each. The mean is not enough to
 describe a sample, a measure of dispersion is necessary.
 
-#### Measures of dispersion
+### Measures of dispersion
 
 Measures that quantify how scattered the data is around of a measure of
 central tendency. Its important to mention that the following functions
@@ -187,7 +191,7 @@ contain an important parameter to treat missing values; na.rm=TRUE.
     are not as sensitive as the standard deviation to far values, since
     they are based on in the median and in the position measures.
 
-#### Graphics
+### Graphics
 
 -   *Histogram:* Bar chart where the frequencies of the grouped variable
     are represented in intervals
@@ -224,7 +228,7 @@ in the study.
 
 ![](1_Descriptive_Statistics_files/figure-markdown_strict/unnamed-chunk-19-2.png)
 
-### Summary Function
+## Summary Function
 
 The summary () function has as an argument a data frame, and displays:
 \* Absolute frequencies for categorical variables \* Basic statistics
@@ -253,7 +257,7 @@ Normality
 Some statistical tests require that the variables be distributed
 according to a normal distribution, and this must be checked
 
-### Checking normality. Hypothesis test
+## Checking normality. Hypothesis test
 
 -   H0: the data are distributed according to a normal distribution
 -   Shapiro-Wilks test: Small samples (&lt;30, &lt;50)
@@ -286,7 +290,7 @@ according to a normal distribution, and this must be checked
 -   In both cases we reject the hypothesis of normality for p-values
     &lt; 0.05
 
-### Checking normality. Graphical methods
+## Checking normality. Graphical methods
 
 -   Q-Q Plot: the quantiles observed in the data are shown against the
     theoretical ones; If the points fit a line, the data follow the
@@ -308,7 +312,7 @@ the study.
 
 ![](1_Descriptive_Statistics_files/figure-markdown_strict/unnamed-chunk-24-1.png)
 
-### Transformations of a variable
+## Transformations of a variable
 
 -   A continuous variable can be transformed to make it follow a normal
     distribution, or at least have a symmetric distribution. The family
