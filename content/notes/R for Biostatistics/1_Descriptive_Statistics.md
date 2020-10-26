@@ -17,12 +17,12 @@ weight: 2
 
 1. Summary()
 2. Categorical Variable
-  * Absolute freq / Relative Frequencies (%)
-  * Pie or Barplot graphs
+    * Absolute freq / Relative Frequencies (%)
+    * Pie or Barplot graphs
 3. Continuous Variable -> Normality Test
-  * ND -> Mean and SD
-  * NND -> Median, interquantile Range
-  * Histogram or Boxplot
+    * ND -> Mean and SD
+    * NND -> Median, interquantile Range
+    * Histogram or Boxplot
 
  
 ## Description of a Discrete Variable
