@@ -77,6 +77,7 @@ in a terminal, we always need to write the function dev.new() first
     pie(t1, col=c("red","blue"), main="Low weight at birth", 
             labels=paste(names(t1), " (", p1_round ,"%)", sep=""))
 
+{{< figure library="true" src="ROnePie.jpg" >}}
 
     # Bar chart: Graphical representation where the abscissa axis represents the categories and relative or absolute frequencies on the ordinate axis
     dev.new()
@@ -84,6 +85,8 @@ in a terminal, we always need to write the function dev.new() first
     barplot(t1)
     barplot(t1, col=c("red","blue"), main="Low weight at birth", 
             names.arg=paste(names(t1), " (", round( p1 * 100, dig=2),"%)", sep=""))
+
+{{< figure library="true" src="ROneBarCharts.jpg" >}}
 
 ## Description of a Continuous Variable
 
@@ -206,15 +209,20 @@ contain an important parameter to treat missing values; na.rm=TRUE.
                   xlab="Age", ylab="Frequency",
                   xlim=c(10,50), breaks=seq(10,50, by=2))
 
-![](1_Descriptive_Statistics_files/figure-markdown_strict/unnamed-chunk-17-1.png)
-\* *Boxplot:* Graphic based on the distribution of the quartils
+
+{{< figure library="true" src="ROneHist.jpg" >}}
+
+
+-  *Boxplot:* Graphic based on the distribution of the quartils
 (including median), with an easy identification of the outliers values.
+
+<!-- -->
 
     par(mfrow=c(1,2))
     boxplot(data$age)
     boxplot(data$age, col="red", main="Boxplot of Age", xlab="Age")
 
-![](1_Descriptive_Statistics_files/figure-markdown_strict/unnamed-chunk-18-1.png)
+{{< figure library="true" src="ROneBoxplot.jpg" >}}
 
 Using the DataExplorer package, we can easily and quickly create
 histograms and density plots to analyze all continuous variables present
@@ -223,12 +231,12 @@ in the study.
     # View histogram of all continuous variables
     plot_histogram(data)
 
-![](1_Descriptive_Statistics_files/figure-markdown_strict/unnamed-chunk-19-1.png)
+{{< figure library="true" src="ROnePlotHist.jpg" >}}
 
     # View estimated density distribution of all continuous variables
     plot_density(data)
 
-![](1_Descriptive_Statistics_files/figure-markdown_strict/unnamed-chunk-19-2.png)
+{{< figure library="true" src="ROnePlotDens.jpg" >}}
 
 ## Summary Function
 
@@ -292,6 +300,7 @@ according to a normal distribution, and this must be checked
 -   In both cases we reject the hypothesis of normality for p-values
     &lt; 0.05
 
+
 ## Checking normality. Graphical methods
 
 -   Q-Q Plot: the quantiles observed in the data are shown against the
@@ -303,7 +312,7 @@ according to a normal distribution, and this must be checked
     qqnorm(data$age, main="Normal Q-Q Plot - Age")
     qqline(data$age)
 
-![](1_Descriptive_Statistics_files/figure-markdown_strict/unnamed-chunk-23-1.png)
+{{< figure library="true" src="ROneNorm.jpg" >}}
 
 Using the DataExplorer package, we can easily and quickly create qq
 plots to analyse the normality of all continuous variables present in
@@ -312,7 +321,8 @@ the study.
     # View quantile-quantile plot of all continuous variables
     plot_qq(data)
 
-![](1_Descriptive_Statistics_files/figure-markdown_strict/unnamed-chunk-24-1.png)
+{{< figure library="true" src="ROneNormPlot.jpg" >}}
+
 
 ## Transformations of a variable
 

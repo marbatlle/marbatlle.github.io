@@ -110,7 +110,6 @@ Graph for a contingency table
     barplot( t(t1), beside=T )
     barplot( prop.table ( t(t1),2 ), beside=T )
 
-{{< figure library="true" src=>}}
 ![](2_Contingency_Tables_files/figure-markdown_strict/unnamed-chunk-8-1.png)
 
 ### Pie charts
