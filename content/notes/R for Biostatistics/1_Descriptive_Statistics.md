@@ -77,7 +77,6 @@ in a terminal, we always need to write the function dev.new() first
     pie(t1, col=c("red","blue"), main="Low weight at birth", 
             labels=paste(names(t1), " (", p1_round ,"%)", sep=""))
 
-     
 
     # Bar chart: Graphical representation where the abscissa axis represents the categories and relative or absolute frequencies on the ordinate axis
     dev.new()
