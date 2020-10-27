@@ -59,18 +59,22 @@ weight on newborns, present in women who have given birth.
 
 As you can see, the set of variables present in this dataset contains
 are described in english, to make it easier to understand, here you can
-see the meaning of each variable and its corresponding categories: \*
-**id**: identification \* **bajo\_pes**: low weight at birth
-(categories: 0 = normal weight (&gt;= 2500g), 1 = low weight (&lt;
-2500g)) \* **edad**: age \* **peso**: weight \* **raza**: race
-(categories: 1 = white, 2 = black, 3 = other) \* **fumador**: smoker
-(categories: 0 = no, 1 = yes) \* **part\_pre**: premature birth
-(categories: 0 = no, 1 = 1 birth, 2 = 2 births, 3 = more than 3) \*
-**hta**: hipertension (categories: 0 = no, 1 = yes) \* **irr\_urin**:
-urinary irritability (categories: 0 = no, 1 = yes) \* **visi\_med**:
-number of medical visits
+see the meaning of each variable and its corresponding categories: 
 
-To condinue with the analysis, we we’ll clean the data while modifying
+-   **id**: identification
+-   **bajo\_pes**: low weight at birth (categories: 0 = normal weight (&gt;= 2500g), 1 = low weight (&lt; 2500g))
+-   **edad**: age
+-   **peso**: weight
+-   **raza**: race
+ categories: 1 = white, 2 = black, 3 = other)
+-   **fumador**: smoker (categories: 0 = no, 1 = yes) 
+-   **part\_pre**: premature birth
+(categories: 0 = no, 1 = 1 birth, 2 = 2 births, 3 = more than 3)
+-   **hta**: hipertension (categories: 0 = no, 1 = yes)
+-   **irr\_urin**: urinary irritability (categories: 0 = no, 1 = yes)
+-   **visi\_med**: number of medical visits
+
+To condinue with the analysis, we'll clean the data while modifying
 it’s variable names and categories.
 
     # Clean and adequate the data

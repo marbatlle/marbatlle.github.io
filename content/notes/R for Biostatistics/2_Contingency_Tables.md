@@ -1,6 +1,6 @@
 ---
 title: Two Categorical Variables
-linktitle: 1. Two Cat. Variables
+linktitle: 2. Two Cat. Variables
 toc: true
 type: docs
 date: "2019-05-05T00:00:00+01:00"
