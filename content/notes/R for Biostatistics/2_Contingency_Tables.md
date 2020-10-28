@@ -128,8 +128,9 @@ Independence Test
 
 ### Chi-square test
 
-Test of independence between the two categorical variables. \* H0: X, Y
-are independent \* H1: X, Y are not independent
+Test of independence between the two categorical variables.
+-   TH0: X, Y are independent
+-   TH1: X, Y are not independent
 
 You want to test whether the distribution of one of the categorical
 variables is similar in all categories of the other variable.
@@ -214,9 +215,9 @@ disease in factor presence versus factor absence.
 Odds Ratio
 ----------
 
-• An Odd (advantage) is a proportion divided by its complement. 
-• Odd = p / (1 - p) expresses how much more likely it is that an event will occur versus not occurring. It is an alternative way of expressing a probability. 
-• The Odds Ratio is defined as the ratio of the odd of having the disease in presence of the factor with respect to the odd of having it in the absence of the factor.
+-   TAn Odd (advantage) is a proportion divided by its complement. 
+-   TOdd = p / (1 - p) expresses how much more likely it is that an event will occur versus not occurring. It is an alternative way of expressing a probability. 
+-   TThe Odds Ratio is defined as the ratio of the odd of having the disease in presence of the factor with respect to the odd of having it in the absence of the factor.
 
     ## Odds Ratio (OR)
     OR <- (a*d) / (b*c)
