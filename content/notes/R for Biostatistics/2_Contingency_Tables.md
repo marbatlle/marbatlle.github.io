@@ -1,6 +1,6 @@
 ---
 title: Two Categorical Variables
-linktitle: 2. Two Cat. Variables
+linktitle: 2. Two Categorical Variables
 toc: true
 type: docs
 date: "2019-05-05T00:00:00+01:00"
@@ -26,8 +26,7 @@ Contingency Tables
 ==================
 
 Contingency tables are used to explore the relationship between two
-categorical variables. Normally, you want to explore the distribution of
-a categorical variable in the different groups, defined by the other
+categorical variables. Normally, you want to explore the distribution of a categorical variable in the different groups, defined by the other
 variable. Description of the contingency table:
 
 -   Absolute frequencies
@@ -110,7 +109,7 @@ Graph for a contingency table
     barplot( t(t1), beside=T )
     barplot( prop.table ( t(t1),2 ), beside=T )
 
-![](2_Contingency_Tables_files/figure-markdown_strict/unnamed-chunk-8-1.png)
+{{< figure library="true" src="RTwoBar.jpg" >}}
 
 ### Pie charts
 
@@ -121,7 +120,8 @@ Graph for a contingency table
     pie( t1[2,], col=col.1, main="Black Race ", lab=lab.low )
     pie( t1[3,], col=col.1, main="Other Races", lab=lab.low )
 
-![](2_Contingency_Tables_files/figure-markdown_strict/unnamed-chunk-9-1.png)
+{{< figure library="true" src="RTwoChar.jpg" >}}
+
 
 Independence Test
 -----------------
@@ -214,12 +214,9 @@ disease in factor presence versus factor absence.
 Odds Ratio
 ----------
 
-• An Odd (advantage) is a proportion divided by its complement. \* Odd =
-p / (1 - p) expresses how much more likely it is that an event will
-occur versus not occurring. It is an alternative way of expressing a
-probability. • The Odds Ratio is defined as the ratio of the odd of
-having the disease in presence of the factor with respect to the odd of
-having it in the absence of the factor.
+• An Odd (advantage) is a proportion divided by its complement. 
+• Odd = p / (1 - p) expresses how much more likely it is that an event will occur versus not occurring. It is an alternative way of expressing a probability. 
+• The Odds Ratio is defined as the ratio of the odd of having the disease in presence of the factor with respect to the odd of having it in the absence of the factor.
 
     ## Odds Ratio (OR)
     OR <- (a*d) / (b*c)
@@ -227,6 +224,8 @@ having it in the absence of the factor.
 
     ## [1] 2,021944
 
+
+## Session Info
     ## R version 3.6.1 (2019-07-05)
     ## Platform: x86_64-conda_cos6-linux-gnu (64-bit)
     ## Running under: Ubuntu 20.04.1 LTS
