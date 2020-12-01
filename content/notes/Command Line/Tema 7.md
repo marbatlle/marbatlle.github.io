@@ -13,8 +13,8 @@ menu:
 weight: 7
 ---
 
-1. Preparing the workspace
---------------------------
+Preparing the workspace
+--------------
 
 ### 1.1. The Conda Environment
 
@@ -70,8 +70,8 @@ See your progress:
 
 pwd tree
 
-2. Obtaining our data
-------------------------------------
+Obtaining our data
+--------------
 
 ### 2.1. Downloading the sequencing data
 
@@ -111,8 +111,8 @@ file to stout(similar to what cat does with uncompressed files).
 
 zcat ERR2868172\_1.fastq.gz | grep “^+$” | wc -l
 
-3. Quality Control Checks on the Data
----------------------
+Quality Control Checks on the Data
+--------------
 We use the FastQC software to do some quality control checks
 
 #### Install FastQC
@@ -124,8 +124,8 @@ conda install -y fastqc
 
 cd $WD mkdir out/fastqc fastqc -o out/fastqc data/\*.fastq.gz
 
-4. Take a Random Sample of your Data
----------------------
+Take a Random Sample of your Data
+--------------
 
 To downsample the reads, we will use the seqtk program. seqtk is a
 tooklit for processing FASTQC and FASTA files.
@@ -145,8 +145,8 @@ ERR2868172\_1.fastq.gz seqtk sample -s100
 original/ERR2868172\_2.fastq.gz 300000 | gzip &gt;
 ERR2868172\_2.fastq.gz ls -lah $WD/data ls -lah $WD/data/original
 
-5. Downloading the Genome
----------------------
+Downloading the Genome
+--------------
 
 We will be downloading the Escherichia coli reference genome from the
 NCBI.
@@ -161,16 +161,14 @@ ecoli.fasta.gz
 <a href="ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/005/845/GCF_000005845.2_ASM584v2/GCF_000005845.2_ASM584v2_genomic.fna.gz" class="uri">ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/005/845/GCF_000005845.2_ASM584v2/GCF_000005845.2_ASM584v2_genomic.fna.gz</a>
 gunzip -k ecoli.fasta.gz
 
-6. Analysing the data
----------------------
+Analysing the data
+--------------
 
 We will now use the data we’ve prepared, performing the following steps:
 \* Remove sequencing adapters from our reads \* Indexing the genome for
 alignment \* Aligning our reads to the genome \* Generating a QC report
 
 ### 6.1. Adapter trimming
-
-
 During sequencing experiments, additional molecules are added to our
 molecules of interest in order for them to bind to our sequencing
 platform. These molecules are called sequencing adapters.
@@ -256,8 +254,8 @@ conda install -y multiqc
 
 multiqc -o out/multiqc $WD
 
-7. Building a pipeline
----------------------
+Building a pipeline
+--------------
 
 In this section we will be automating the steps that you just performed
 manually, so that they can be applied to any input files.
