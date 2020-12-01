@@ -21,14 +21,16 @@ organizations:
 bio: Biotechnologist with a great interest in learning how to apply Bioinformatics to Precision Medicine
 
 interests:
-- Genomic Data Science
+- Next generation sequencing experiments
+- DNA, RNA and epienetics patterns
+- Genome analysis
 - Personalized Medicine
 
 education:
   courses:
   - course: MSc in Personalized Medicine and Health Bioinformatics
     institution: Instituto de Salut Carlos III
-    year: ""
+    year: 2021
   - course: MSEd in Science Teaching 
     institution: Universitat Pompeu Fabra
     year: 2019

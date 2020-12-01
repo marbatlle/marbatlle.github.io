@@ -18,7 +18,7 @@ type: docs  # Do not modify.
 menu:
   example:
     name: R for Biostatistics
-    weight: 1
+    weight: 2
 ---
 
 Load libraries
