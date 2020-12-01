@@ -39,7 +39,16 @@ date_format = "Jan 2006"
   date_end = "2020-07-29"
   description = """This 76 hour Track consist of 19 courses that go through the learning process of R; importing, cleaning, manipulating and visualizating data."""
 
-
+[[item]]
+  organization = "DataCamp"
+  organization_url = "https://www.datacamp.com"
+  title = "Data Scientist with R Track"
+  url = ""
+  certificate_url = "https://www.datacamp.com/statement-of-accomplishment/track/b29f556fb194418b3656190d68c0a3270de1b1dc"
+  date_start = "2020-04-20"
+  date_end = "2020-07-29"
+  description = """This 76 hour Track consist of 19 courses that go through the learning process of R; importing, cleaning, manipulating and visualizating data."""
+  
 [[item]]
   organization = "Universitat Oberta de Catalunya"
   organization_url = "https://www.uoc.edu/portal/en/index.html"
