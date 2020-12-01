@@ -17,7 +17,7 @@ type: docs  # Do not modify.
 # - weight: Position of link in menu.
 menu:
   example:
-    name: SLQ
+    name: SQL
     weight: 1
 ---
 
