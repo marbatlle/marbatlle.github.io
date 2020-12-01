@@ -18,18 +18,6 @@ date_format = "Jan 2006"
 #   Leave other parameters empty if not required.
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 
-
-[[item]]
-  organization = "Universitat Oberta de Catalunya"
-  organization_url = "https://www.uoc.edu/portal/en/index.html"
-  title = "Data Analysis with R"
-  url = "http://cv.uoc.edu/tren/trenacc/web/GAT_EXP.PLANDOCENTE?any_academico=20202&cod_asignatura=M0.153&idioma=CAS&pagina=PD_PREV_PORTAL&cache=S"
-  certificate_url = ""
-  date_start = "2020-02-01"
-  date_end = "2020-06-2"
-  description = """5 ECTS university course from the MSc in Bioinformatics and Biostatistics. This course introduces the student to the management and use of the R programming language at a beginner and intermediate level."""
-
-  
 [[item]]
   organization = "Coursera"
   organization_url = "https://www.coursera.org"
@@ -52,12 +40,22 @@ date_format = "Jan 2006"
   description = """This 76 hour Track consist of 19 courses that go through the learning process of R; importing, cleaning, manipulating and visualizating data."""
 
 
+[[item]]
+  organization = "Universitat Oberta de Catalunya"
+  organization_url = "https://www.uoc.edu/portal/en/index.html"
+  title = "Data Analysis with R"
+  url = ""
+  certificate_url = "http://cv.uoc.edu/tren/trenacc/web/GAT_EXP.PLANDOCENTE?any_academico=20202&cod_asignatura=M0.153&idioma=CAS&pagina=PD_PREV_PORTAL&cache=S"
+  date_start = "2020-02-01"
+  date_end = "2020-06-2"
+  description = """5 ECTS university course from the MSc in Bioinformatics and Biostatistics. This course introduces the student to the management and use of the R programming language at a beginner and intermediate level."""
+
 [item]]
   organization = "Universitat Oberta de Catalunya"
   organization_url = "https://www.uoc.edu/portal/en/index.html"
   title = "Statistical Inference"
-  url = "http://cv.uoc.edu/tren/trenacc/web/GAT_EXP.PLANDOCENTE?any_academico=20202&cod_asignatura=M0.155&idioma=CAS&pagina=PD_PREV_PORTAL&"
-  certificate_url = ""
+  url = ""
+  certificate_url = "http://cv.uoc.edu/tren/trenacc/web/GAT_EXP.PLANDOCENTE?any_academico=20202&cod_asignatura=M0.155&idioma=CAS&pagina=PD_PREV_PORTAL&"
   date_start = "2020-02-01"
   date_end = "2020-06-2"
   description = """5 ECTS university course from the MSc in Bioinformatics and Biostatistics. This course aims to establish the probabilistic and statistical bases for the study of more advanced topics while presenting the basic tools of all data analysis."""
