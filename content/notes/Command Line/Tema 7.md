@@ -215,12 +215,12 @@ remove any we find. To do this, we will use the cutadapt software.
 
 With our index ready, we can now align our reads to it.
 
-cd $WD mkdir -p out/star/ERR2868172 STAR –runThreadN 4 –genomeDir
-res/genome/star\_index/  
-–readFilesIn out/cutadapt/ERR2868172\_1.trimmed.fastq.gz
-out/cutadapt/ERR2868172\_2.trimmed.fastq.gz  
-–readFilesCommand zcat  
-–outFileNamePrefix out/star/ERR2868172/
+    cd $WD mkdir -p out/star/ERR2868172 STAR –runThreadN 4 –genomeDir
+    res/genome/star\_index/  
+    –readFilesIn out/cutadapt/ERR2868172\_1.trimmed.fastq.gz
+    out/cutadapt/ERR2868172\_2.trimmed.fastq.gz  
+    –readFilesCommand zcat  
+    –outFileNamePrefix out/star/ERR2868172/
 
     #### Check what your project looks like
 
@@ -330,8 +330,8 @@ the flow of the program depending on the outcome of certain conditions.
     echo "Running STAR alignment..."
     STAR --runThreadN 4 --genomeDir res/genome/star_index/ --readFilesIn out/cutadapt/${sampleid}_1.trimmed.fastq.gz out/cutadapt/${sampleid}_2.trimmed.fastq.gz --readFilesCommand zcat --outFileNamePrefix out/star/${sampleid}/
 
-else echo “Usage: $0 <sampleid>” \#the special variable $0 contains the
-name of the script
+    else echo “Usage: $0 <sampleid>” \#the special variable $0 contains the
+    name of the script
 
     # In the next line, return an error signal instead of the default OK signal.
     # This allows us to run something like
