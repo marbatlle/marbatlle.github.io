@@ -27,6 +27,8 @@ Notes from the *Learn SQL* course from Codecademy:
 
 **Course Description**: Learn to communicate with databases using SQL, the standard data management language. Including; Manipulation, queries, aggregate functions and multiple tables.
 
-**Course Certificate**: https://www.codecademy.com/profiles/netNinja82250/certificates/042a4e5884e3eb6ea1f2a12be6abb851
+**Course Certificate**
+{{< figure library="true" src="certificate_sql.jpg" >}}
+The link: https://www.codecademy.com/profiles/netNinja82250/certificates/042a4e5884e3eb6ea1f2a12be6abb851
 
 Also took notes from classes at ISCIII, MSc Personalized Medicine and Health Bioinformatics module, by professor JM Gonzalez.
