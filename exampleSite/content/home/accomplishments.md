@@ -12,7 +12,7 @@ headless: true
 # Order that this section appears on the page.
 weight: 50
 
-title: Accomplish&shy;ments
+title: Courses and Certificates
 subtitle:
 
 # Date format
