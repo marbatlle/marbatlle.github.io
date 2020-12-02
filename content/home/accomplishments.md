@@ -12,8 +12,8 @@ headless: true
 # Order that this section appears on the page.
 weight: 50
 
-title: Accomplish&shy;ments
-subtitle:
+title: Courses Completed
+subtitle: Resources to z
 
 # Date format
 #   Refer to https://sourcethemes.com/academic/docs/customization/#date-format
