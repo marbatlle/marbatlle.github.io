@@ -8,68 +8,64 @@ draft: false
 menu:
   example:
     parent: SQL
-    weight: 1
+    weight: 4
 
 # Prev/next pager order (if `docs_section_pager` enabled in `params.toml`)
-weight: 1
+weight: 4
 ---
 
-#### Column Constraints
-Column constraints are the rules applied to the values of individual columns:
+#### Outer Join
+An outer join will combine rows from different tables even if the join condition is not met. In a LEFT JOIN, every row in the left table is returned in the result set, and if the join condition is not met, then NULL values are used to fill in the columns from the right table.
 
-* *PRIMARY KEY* constraint can be used to uniquely identify the row.
-* *UNIQUE* columns have a different value for every row.
-* *NOT NULL* columns must have a value.
-* *DEFAULT* assigns a default value for the column when no value is specified.
+        SELECT column_name(s)
+        FROM table1
+        LEFT JOIN table2
+        ON table1.column_name = table2.column_name;
 
-There can be only one *PRIMARY KEY* column per table and multiple *UNIQUE* columns.
+#### WITH Clause
+The WITH clause stores the result of a query in a temporary table (temporary_movies) using an alias.
 
-        CREATE TABLE student (
-        id INTEGER PRIMARY KEY,
-        name TEXT UNIQUE,
-        grade INTEGER NOT NULL,
-        age INTEGER DEFAULT 10
-        );
+Multiple temporary tables can be defined with one instance of the WITH keyword.
 
-#### CREATE TABLE Statment
-The *CREATE TABLE* statement creates a new table in a database. It allows one to specify the name of the table and the name of each column in the table.
+        WITH temporary_movies AS (
+        SELECT *
+        FROM movies
+        )
+        SELECT *
+        FROM temporary_movies
+        WHERE year BETWEEN 2000 AND 2020;
 
-        CREATE TABLE table_name (
-        column1 datatype,
-        column2 datatype,
-        column3 datatype
-        );
+#### UNION Clause
+The UNION clause is used to combine results that appear from multiple SELECT statements and filter duplicates.
 
-#### INSERT Statement
-The *INSERT INTO* statement is used to add a new record (row) to a table.
+For example, given a first_names table with a column name containing rows of data “James” and “Hermione”, and a last_names table with a column name containing rows of data “James”, “Hermione” and “Cassidy”, the result of this query would contain three names: “Cassidy”, “James”, and “Hermione”.
 
-It has two forms as shown:
-* Insert into columns in order.
-* Insert into columns by name.
+        SELECT name
+        FROM first_names
+        UNION
+        SELECT name
+        FROM last_names
 
-        -- Insert into columns in order:
-        INSERT INTO table_name
-        VALUES (value1, value2);
-        
-        -- Insert into columns by name:
-        INSERT INTO table_name (column1, column2)
-        VALUES (value1, value2);
+#### CROSS JOIN Clause
+The CROSS JOIN clause is used to combine each row from one table with each row from another in the result set. This JOIN is helpful for creating all possible combinations for the records (rows) in two tables.
 
-#### ALTER TABLE Statement
-The *ALTER TABLE* statement is used to modify the columns of an existing table. When combined with the *ADD COLUMN* clause, it is used to add a new column.
+The given query will select the shirt_color and pants_color columns from the result set, which will contain all combinations of combining the rows in the shirts and pants tables. If there are 3 different shirt colors in the shirts table and 5 different pants colors in the pants table then the result set will contain 3 x 5 = 15 rows.
 
-        ALTER TABLE table_name
-        ADD column_name datatype;
+        SELECT shirts.shirt_color,
+        pants.pants_color
+        FROM shirts
+        CROSS JOIN pants;
 
-#### DELETE Statement
-The *DELETE* statement is used to delete records (rows) in a table. The *WHERE* clause specifies which record or records that should be deleted. If the *WHERE* clause is omitted, all records will be deleted.
+#### Foreign Key
+A foreign key is a reference in one table’s records to the primary key of another table. To maintain multiple records for a specific row, the use of foreign key plays a vital role. For instance, to track all the orders of a specific customer, the table order (illustrated at the bottom of the image) can contain a foreign key.
 
-        DELETE FROM table_name
-        WHERE some_column = some_value;
+#### Inner Join
+The JOIN clause allows for the return of results from more than one table by joining them together with other results based on common column values specified using an ON clause. INNER JOIN is the default JOIN and it will only return results matching the condition specified by ON.
 
-#### UPDATE Statement
-The *UPDATE* statement is used to edit records (rows) in a table. It includes a *SET* clause that indicates the column to edit and a *WHERE* clause for specifying the record(s).
+        SELECT * 
+        FROM books
+        JOIN authors
+        ON books.author_id = authors.id;
 
-        UPDATE table_name
-        SET column1 = value1, column2 = value2
-        WHERE some_column = some_value;
+#### Primary Key
+A primary key column in a SQL table is used to uniquely identify each record in that table. A primary key cannot be NULL. In the example, customer_id is the primary key. The same value cannot re-occur in a primary key column. Primary keys are often used in JOIN operations.
