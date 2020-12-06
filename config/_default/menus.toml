@@ -9,7 +9,7 @@
   weight = 10
 
 [[main]]
-  name = "Class Notes"
+  name = "Mar's Notes"
   url = "notes/"
   weight = 30
 
