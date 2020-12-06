@@ -22,8 +22,8 @@ bio: Biotechnologist with a great interest in learning how to apply Bioinformati
 
 interests:
 - Next generation sequencing experiments
-- DNA, RNA and epienetics patterns
-- Genome analysis
+- DNA, RNA and epigenetics patterns
+- Genomic Data Science
 - Personalized Medicine
 
 education:
