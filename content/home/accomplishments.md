@@ -29,7 +29,7 @@ item:
   date_end: "2020-10-01"
   date_start: "2020-08-01"
   description: This specialization includes the following courses; Introduction to Genomic Technoligies, Genomic Data Science with Galaxy, Python for Genomic Data Science, Algorithms for DNA Sequencing, Command Line Tools for Genomic Data Science, Bioconductor for Genomic Data Science, Statistics for Genomic Data Science.
-  organization: Coursera
+  organization: John Hopkins University - Coursera
   organization_url: https://www.coursera.org
   title: Genomic Data Science Specialization
   url: https://www.coursera.org/specializations/genomic-data-science
