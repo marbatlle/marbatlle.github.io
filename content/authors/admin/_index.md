@@ -14,23 +14,23 @@ role: Bioinformatics Student
 
 # Organizations/Affiliations
 organizations:
-- name: Instituto de Salud Carlos III
+- name: Spanish National Cancer Research Center and Barcelona Supercomputing Center
   url: http://www.masterbioinformatica.com
 
 # Short bio (displayed in user profile at end of posts)
 bio: Biotechnologist with a great interest in learning how to apply Bioinformatics to Precision Medicine
 
 interests:
-- Next generation sequencing experiments
-- DNA, RNA and epigenetics patterns
 - Genomic Data Science
 - Personalized Medicine
+- Next generation sequencing experiments
+- DNA, RNA and epigenetics patterns
 
 education:
   courses:
   - course: MSc in Personalized Medicine and Health Bioinformatics
     institution: Instituto de Salut Carlos III
-    year: 2021
+    year: 2020
   - course: MSEd in Science Teaching 
     institution: Universitat Pompeu Fabra
     year: 2019
