@@ -50,7 +50,7 @@ social:
   icon_pack: fab
   link: https://gitlab.com/marbatlle
 - icon: envelope
-  icon_pack: fas
+  icon_pack: fab
   link: 'mailto:marbatlleperez@gmail.com'  
 
 # For a direct email link, use "mailto:test@example.org".
