@@ -8,10 +8,10 @@ draft: false
 menu:
   example:
     parent: Python
-    weight: 1
+    weight: 2
 
 # Prev/next pager order (if `docs_section_pager` enabled in `params.toml`)
-weight: 1
+weight: 2
 ---
 
 <center><b><font color='DARKRED' size='4px'>MSc. Personalized Medicine and Health Applied Bioinformatics</font></b></center>
