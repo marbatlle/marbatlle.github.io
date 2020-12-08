@@ -30,7 +30,7 @@ education:
   courses:
   - course: MSc in Personalized Medicine and Health Bioinformatics
     institution: Instituto de Salut Carlos III
-    year: 2020
+    year: 2021
   - course: MSEd in Science Teaching 
     institution: Universitat Pompeu Fabra
     year: 2019
