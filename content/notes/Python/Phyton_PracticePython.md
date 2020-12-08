@@ -1,6 +1,6 @@
 ---
 title: "Exercices from www.practicepython.org"
-linktitle: Basic Concepts Practice
+linktitle: 1. Basic Concepts Practice
 toc: true
 type: docs
 date: "2019-05-05T00:00:00+01:00"
