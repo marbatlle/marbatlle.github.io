@@ -23,8 +23,9 @@ bio: Biotechnologist with a great interest in learning how to apply Bioinformati
 interests:
 - Genomic Data Science
 - Personalized Medicine
-- Next generation sequencing experiments
+- NGS experiments
 - DNA, RNA and epigenetics patterns
+- Innovative approaches to Science Teaching
 
 education:
   courses:

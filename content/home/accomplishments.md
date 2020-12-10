@@ -36,7 +36,7 @@ item:
 - certificate_url: "https://www.datacamp.com/statement-of-accomplishment/track/b29f556fb194418b3656190d68c0a3270de1b1dc"
   date_end: "2020-07-29"
   date_start: "2020-04-20"
-  description: This 76 hour Track consist of 19 courses that go through the learning process of R; importing, cleaning, manipulating and visualizating data.
+  description: This 76 hour Track consist of 19 courses that go through the learning process of R; importing, cleaning, manipulating and visualizing data.
   organization: DataCamp
   organization_url: https://www.datacamp.com
   title: Data Scientist with R Track
@@ -44,7 +44,7 @@ item:
 - certificate_url: ""
   date_end: "2020-06-02"
   date_start: "2020-02-01"
-  description: ECTS university course from the MSc in Bioinformatics and Biostatistics. This course introduces the student to the management and use of the R programming language at a beginner and intermediate level.
+  description: 5 ECTS university course from the MSc in Bioinformatics and Biostatistics. This course introduces the student to the management and use of the R programming language at a beginner and intermediate level.
   organization: Universitat Oberta de Catalunya
   organization_url: https://www.uoc.edu/portal/en/index.html
   title: Data Analysis with R
@@ -52,7 +52,7 @@ item:
 - certificate_url: ""
   date_end: "2020-06-02"
   date_start: "2020-02-01"
-  description:  ECTS university course from the MSc in Bioinformatics and Biostatistics. This course aims to establish the probabilistic and statistical bases for the study of more advanced topics while presenting the basic tools of all data analysis.
+  description:  5 ECTS university course from the MSc in Bioinformatics and Biostatistics. This course aims to establish the probabilistic and statistical bases for the study of more advanced topics while presenting the basic tools of all data analysis.
   organization: Universitat Oberta de Catalunya
   organization_url: https://www.uoc.edu/portal/en/index.html
   title: Statistical Inference
