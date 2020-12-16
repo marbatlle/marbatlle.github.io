@@ -47,9 +47,9 @@ social:
 - icon: linkedin
   icon_pack: fab
   link: https://www.linkedin.com/in/marbatlle/
-- icon: gitlab
+- icon: github
   icon_pack: fab
-  link: https://gitlab.com/marbatlle
+  link: https://github.com/marbatlle
 - icon: envelope
   icon_pack: fas
   link: 'mailto:marbatlleperez@gmail.com'  
