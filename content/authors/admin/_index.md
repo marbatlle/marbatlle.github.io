@@ -20,6 +20,7 @@ organizations:
 # Short bio (displayed in user profile at end of posts)
 bio: Biotechnologist with a great interest in learning how to apply Bioinformatics to Precision Medicine
 
+
 interests:
 - Genomic Data Science
 - Personalized Medicine
@@ -80,3 +81,5 @@ user_groups:
 # Hi there
 
 I'm a biotechnologist with a great interest in learning how to apply Bioinformatics to Precision Medicine. The aim of this site is to summarize all the notes and resources curated during this learning path.
+
+{{< icon name="download" pack="fas" >}} Download my {{< staticref "media/resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
