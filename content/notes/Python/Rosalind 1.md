@@ -8,7 +8,7 @@ draft: false
 menu:
   example:
     parent: Python
-    weight: 2
+    weight: 3
 
 # Prev/next pager order (if `docs_section_pager` enabled in `params.toml`)
 weight: 2
@@ -35,3 +35,7 @@ Mission statement: We hope that Rosalind will inspire a new generation of bioinf
 * Bioinformatics Armory
 * Bioinformatics Textbook Track
 * Algorithmic Height
+
+### My Repository
+
+https://github.com/marbatlle/Rosalind_Project
