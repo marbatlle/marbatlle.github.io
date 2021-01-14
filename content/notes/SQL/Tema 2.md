@@ -86,6 +86,7 @@ Unique values of a column can be selected using a DISTINCT query. For a table co
 * Madison
 * Boston
 * Denver
+
         SELECT DISTINCT city
         FROM contact_details;
 

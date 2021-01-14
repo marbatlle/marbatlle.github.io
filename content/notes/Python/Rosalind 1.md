@@ -1,5 +1,5 @@
 ---
-title: "Rosalind Prokect"
+title: "Rosalind Project"
 linktitle: 3. Rosalind
 toc: true
 type: docs
@@ -13,8 +13,6 @@ menu:
 # Prev/next pager order (if `docs_section_pager` enabled in `params.toml`)
 weight: 2
 ---
-# Rosalind
-
 Rosalind is a platform for learning bioinformatics and programming through problem solving. The link: http://rosalind.info/problems
 
 ### About
