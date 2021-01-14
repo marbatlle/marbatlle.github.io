@@ -50,12 +50,13 @@ social:
 - icon: github
   icon_pack: fab
   link: https://github.com/marbatlle
-- icon: envelope
-  icon_pack: fas
-  link: 'mailto:marbatlleperez@gmail.com'  
 - icon: kaggle
   icon_pack: fab
   link: https://www.kaggle.com/marbatlle
+- icon: envelope
+  icon_pack: fas
+  link: 'mailto:marbatlleperez@gmail.com'  
+
 
 # For a direct email link, use "mailto:test@example.org".
 # Link to a PDF of your resume/CV from the About widget.
@@ -77,6 +78,5 @@ user_groups:
 - Visitors
 ---
 # Hi there
-
 
 I'm a biotechnologist with a great interest in learning how to apply Bioinformatics to Precision Medicine. The aim of this site is to summarize all the notes and resources curated during this learning path.
