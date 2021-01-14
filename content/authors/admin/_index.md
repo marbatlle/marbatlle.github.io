@@ -53,6 +53,9 @@ social:
 - icon: envelope
   icon_pack: fas
   link: 'mailto:marbatlleperez@gmail.com'  
+- icon: kaggle
+  icon_pack: fab
+  link: https://www.kaggle.com/marbatlle
 
 # For a direct email link, use "mailto:test@example.org".
 # Link to a PDF of your resume/CV from the About widget.
