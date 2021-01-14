@@ -1,11 +1,11 @@
 ---
 # Course title, summary, and position.
-linktitle: SQL
-summary: Summary of most basic tools and commands to communicate with relational databases through SQL; how to manipulate data and build queries that communicate with more than one table.
+linktitle: Machine Learning
+summary: ""
 weight: 1
 
 # Page metadata.
-title: SQL
+title: Machine Learning
 date: "2018-09-09T00:00:00Z"
 lastmod: "2018-09-09T00:00:00Z"
 draft: false  # Is this a draft? true/false
@@ -17,8 +17,8 @@ type: docs  # Do not modify.
 # - weight: Position of link in menu.
 menu:
   example:
-    name: SQL
-    weight: 4
+    name: Machine Learning
+    weight: 5
 ---
 
 **SQL** is a domain-specific language used in programming and designed for managing data held in a relational database management system, or for stream processing in a relational data stream management system.
