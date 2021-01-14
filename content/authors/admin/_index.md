@@ -14,7 +14,7 @@ role: Bioinformatics Student
 
 # Organizations/Affiliations
 organizations:
-- name: Instituto de Salud Carlos III
+- name: National School of Health, ISCIII
   url: http://www.masterbioinformatica.com
 
 # Short bio (displayed in user profile at end of posts)
@@ -23,14 +23,13 @@ bio: Biotechnologist with a great interest in learning how to apply Bioinformati
 
 interests:
 - Genomic Data Science
-- Personalized Medicine
+- Precision Medicine
 - NGS experiments
-- DNA, RNA and epigenetics patterns
 - Innovative approaches to Science Teaching
 
 education:
   courses:
-  - course: MSc in Personalized Medicine and Health Bioinformatics
+  - course: MSc in Precision Medicine and Health Bioinformatics
     institution: Instituto de Salut Carlos III
     year: 2021
   - course: MSEd in Science Teaching 
