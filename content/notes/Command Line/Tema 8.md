@@ -18,13 +18,13 @@ Notes from the *Learn Git* course from Codecademy:
 **Course Description**: Learn to save and manage different versions of your code projects with this essential tool.
 
 **Course Certificate**
-{{< figure library="true" src="git_course.jpg" >}}
 The link: https://www.codecademy.com/profiles/netNinja82250/certificates/a8ab218d5950c29861635cc0bf12fd13
+{{< figure library="true" src="git_course.jpg" >}}
 
 
 
-Git Repository
---------------
+
+# Git Repository Notes
 
 ## 1. Basic Git Workflow
 ### Checking the Status of a Git Repository
