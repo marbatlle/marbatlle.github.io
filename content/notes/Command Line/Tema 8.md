@@ -24,7 +24,7 @@ The link: https://www.codecademy.com/profiles/netNinja82250/certificates/a8ab218
 
 
 
-# Git Repository Notes
+# The Notes
 
 ## 1. Basic Git Workflow
 ### Checking the Status of a Git Repository
