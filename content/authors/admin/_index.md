@@ -22,10 +22,10 @@ bio: Biotechnologist with a great interest in learning how to apply Bioinformati
 
 
 interests:
-- Genomic Data Science
-- Precision Medicine
-- NGS experiments
-- Innovative approaches to Science Teaching
+- Translational Bioinformatics
+- ML for Precision Medicine
+- 35mm Film Photography and Videography
+- Anything related to FC Barcelona
 
 education:
   courses:
