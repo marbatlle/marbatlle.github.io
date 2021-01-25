@@ -28,31 +28,34 @@ Machine Learning models allow the vast majority of data to be handled with an ac
 ### Supervised Learning
 In Supervised Learning, the dataset on which we train our model is labeled; there is a clear and distinct mapping of input an output.
 
-#### Classification
-Classification is a supervised learning approach in which the computer program learns from the input data and then uses this learning to classify new observations.  Applied when the outcome is finite. This includes: 
-* Logistic Regression
-* Naive Bayes Classifier
-* Nearest Neighbor
-* Support Vector Machines
-* Decision Trees
-* Boosted Trees
-* Random Forest
-* Neural Networks.
+**Key points:**
+* Labeled data
+* Direct feedback
+* Predict outcome/feature
 
-#### Regression
-Regression models are used extensively to predict values based on the variables that are dependent on several factors. Appliied when the model has infinite possible values of outcome
+**Types:**
+* Regression: model asked to predict a value
+* Classification: model asked to predict a class
 
 ### Unsupervised Learning
 In Unsupervised Learning, there is no labeled data; the algorithm identifies the patterns within the dataset learns them.
 
-#### Dimensionality Reduction
+**Key points:**
+* No labels
+* No feedbacks
+* Final hidden structure in data
 
-
-#### Clustering
-
+**Types:**
+* Dimensionality Reduction
+* Clustering
 
 ### Reinforcement Learning
 The aim of this algorithm is to reach a goal in a dynamic environment, based on several rewards that are provided to it by the system.
+
+**Key points:**
+* Decision process
+* Reward system
+* Learn series of action
 
 
 References: 
