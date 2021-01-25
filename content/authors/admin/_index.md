@@ -30,7 +30,7 @@ interests:
 education:
   courses:
   - course: MSc in Precision Medicine and Health Bioinformatics
-    institution: Instituto de Salut Carlos III
+    institution: National School of Health, ISCIII
     year: 2021
   - course: MSEd in Science Teaching 
     institution: Universitat Pompeu Fabra
@@ -79,6 +79,8 @@ user_groups:
 ---
 # Hi there
 
-I'm a biotechnologist with a great interest in learning how to apply Bioinformatics to Precision Medicine. The aim of this site is to summarize all the notes and resources curated during this learning path.
+I'm Mar and I'm from the beautiful city of Barcelona. I attended Universitat de Girona where I earned my BS in Biotechnology. During school, I ended up working as the program director at a summer camp in the captivating area of Algonquin Park, in Ontario, Canada. But the COVID-19 pandemic, turned my plans upside down and made change my focus on the future. I started grad school at the National School of Health, ISCIII in their Master's of Precision Medicine and Health Bioinformatics.
 
-{{< icon name="download" pack="fas" >}} Download my {{< staticref "media/resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
+This website is meant to be a portfolio of all my side projects and some of my school projects. It'll also have the summary of all my notes and resources curated during this learning path.
+
+{{< icon name="download" pack="fas" >}} Download my {{< staticref "media/resume.pdf" "newtab" >}}resume{{< /staticref >}}.
