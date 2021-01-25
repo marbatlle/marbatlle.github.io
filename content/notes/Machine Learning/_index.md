@@ -5,7 +5,7 @@ summary: " Machine learning has a wide range of applications and an incredible a
 weight: 5
 
 # Page metadata.
-title: Machine Learning
+title: Why Machine Learning? 
 date: "2018-09-09T00:00:00Z"
 lastmod: "2018-09-09T00:00:00Z"
 draft: false  # Is this a draft? true/false
@@ -20,7 +20,7 @@ menu:
     name: Machine Learning
     weight: 5
 ---
-# Why Machine Learning? 
+
 Machine Learning models allow the vast majority of data to be handled with an accurate generation of predictions. Applying the created patterns when new input is introduced, wile optimizing the models. This way, ML models learn to adapt to new example and produce better results
 
 ## Types of Machine Learning
