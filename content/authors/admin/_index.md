@@ -79,7 +79,7 @@ user_groups:
 ---
 # Hi there
 
-I'm Mar and I'm from the beautiful city of Barcelona. I attended Universitat de Girona where I earned my BSc in Biotechnology. During school, I ended up working as the program director at a summer camp in the captivating area of Algonquin Park, in Ontario, Canada. But the COVID-19 pandemic, turned my plans upside down and made change my focus on the future. I started grad school at the National School of Health, ISCIII in their Master's of Precision Medicine and Health Bioinformatics.
+I'm Mar and I'm from the beautiful city of Barcelona. I attended Universitat de Girona where I earned my BSc in Biotechnology. During school, I ended up working as the program director at a summer camp in the captivating area of Algonquin Park, in Ontario, Canada. But the COVID-19 pandemic, turned my plans upside down and gave me the time to change my focus and rearrage my priorities. I started grad school at the National School of Health, ISCIII in their Master's of Precision Medicine and Health Bioinformatics.
 
 This website is meant to be a portfolio of all my side projects and some of my school projects. It'll also have the summary of all my notes and resources curated during this learning path.
 
