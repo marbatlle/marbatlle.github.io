@@ -57,14 +57,14 @@ Only the instructions RUN, COPY, and ADD create layers. Other instructions creat
 
 ### Docker Run - Accessing Containers
 
-    docker pull \<images-name>:\<version> #pulls image from Docker registry
-    docker run \<images-name>:\<version> #runs container from mentioned image
-    docker ps #shows all running containers
-    docker ps -a #shows all available containers
-    docker exec #executes a command in a running container
+    $ docker pull \<images-name>:\<version> #pulls image from Docker registry
+    $ docker run \<images-name>:\<version> #runs container from mentioned image
+    $ docker ps #shows all running containers
+    $ docker ps -a #shows all available containers
+    $ docker exec #executes a command in a running container
 
-*Meaning of each column for ps output:*
 
+**Meaning of each column for ps output:**
 * CONTAINER ID: shows the unique ID of each container
 * IMAGE: the image from which the container is created
 * COMMAND: command executed in the container while starting it
@@ -72,3 +72,43 @@ Only the instructions RUN, COPY, and ADD create layers. Other instructions creat
 * STATUS: the current status of the container
 * PORTS: if any of the container ports is connected to the host machine, it will be displayed here
 * NAMES: this is the name of a container. If it is not provided while creating the container, Docker provides a unique name by default.
+
+**Get back to the bash of any running container:**
+
+    $ docker exec -it <container id/name> bash
+
+**Exit a running bash container:**
+
+    $ exit
+
+### Docker Commit Images
+Since we can use the container like a normal Linux machine, we can work in it exactly as we work in any normal Linux machine.
+
+**Start and access the containers shell:**
+
+    $ docker ps -a #check the first entry or the entry which cas bash in its command column; copy the container id
+    $ docker start <container_id/name> #start the container
+    $ docker exec -it <conatiner_id/name> bash #access the containers shell
+
+To commit changes to the container and create a new image from it, we need to change something in a container. 
+
+**Install nano:**
+
+    $ apt-get update
+    $ apt-get install vim nano
+
+**Create a Python program and commit the changes, creating a new image:**
+
+    $ nano todays_date.py
+    Add and save: 
+    from datetime import datetime
+    print("Today's date is "+ datetime.utcnow().strftime("%Y-%m-%d"))
+    $ exit #exit the bash
+    $ docker commit -m "<commit message>" <container_id/name> <new_image_name>:<version> #commit the container
+    $ docker images #see the images on our system
+
+**Push your image to your Docker Hub account so that anybody can access it:**
+
+    $ sudo docker login #login to your docker account
+    $ sudo docker tag <image_name> <your_docker_hub_username>/<image>:<version> #user tag
+    $ sudo docker push <your_docker_hub_username>/<image>:<version> #push image online
