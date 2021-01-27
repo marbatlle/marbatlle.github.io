@@ -113,7 +113,7 @@ To commit changes to the container and create a new image from it, we need to ch
     $ sudo docker tag <image_name> <your_docker_hub_username>/<image>:<version> #user tag
     $ sudo docker push <your_docker_hub_username>/<image>:<version> #push image online
 
-## Managing Data for Containers
+### Managing Data for Containers
  Whenever you create a container from an image, it creates a new container without any data except the image data. We created the date-project image, which is a very small image. It has only one project file which we created in the container file system. If the container is removed before committing the changes, we will lose the data. So, it is always good practice to separate your data’s file system from the container’s file system.
 
  Whenever a container is created, a file system is also created with it, which is a default Linux filesystem. Although Docker shares the OS’s kernel, there is a separation between file systems.
@@ -128,3 +128,16 @@ Docker’s bind mount and volumes can be used in such cases.
     $ docker run -v #to mount a volume
 
 {{< figure library="true" src="docker2.jpg" >}}
+
+### Bind mount
+In bind mount, you use the host filesystem and mount it on the container using -v flag with the run command.
+
+    $ docker run -it -v <absolute_path>:<folder path or new folder name> date_project:1.0
+
+You can mount the user's desktop folder into the container, if you cd into it, you will be able to access the folder from inside the container. You will also get access to any changes created in the container from the container itself or the host will be reflected on both sides.
+
+    # To mount the file system as read-only, use ro flag. 
+    $ docker run -it -v <absolute_path>:<folder path or new folder name>:ro date_project:1.0
+
+
+    https://www.educative.io/courses/working-with-containers-docker-docker-compose/B1GEgE68n52
