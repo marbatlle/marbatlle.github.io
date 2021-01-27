@@ -2,7 +2,7 @@
 # Course title, summary, and position.
 linktitle: R for Biostatistics
 summary: An introduction to basic statistical concepts and R programming skills necessary for analysing data in the life sciences
-weight: 1
+weight: 3
 
 # Page metadata.
 title: R for Biostatistics
@@ -18,7 +18,7 @@ type: docs  # Do not modify.
 menu:
   example:
     name: R for Biostatistics
-    weight: 2
+    weight: 3
 ---
 
 Load libraries

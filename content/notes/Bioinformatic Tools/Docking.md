@@ -1,6 +1,6 @@
 ---
-title: Docking
-linktitle: Docking
+title: Docker
+linktitle: Docker
 type: docs
 date: "2019-05-05T00:00:00+01:00"
 draft: false
@@ -13,15 +13,12 @@ menu:
 weight: 8
 ---
 
-Notes from the *Learn Git* course from Codecademy:
+Notes from the *Working with Containers: Docker & Docker Compose* course from Educative.io:
 
-**Course Description**: Learn to save and manage different versions of your code projects with this essential tool.
+**Course Description**:In this course, you will learn the fundamentals of Docker such as containers, images, and commands. You’ll then progress to more advanced concepts like connecting to a database container and how to simplify workflows with Docker Compose. At the end, you’ll learn how to monitor clusters and scale Docker services with Swarm.
 
-**Course Certificate**
-The link: https://www.codecademy.com/profiles/netNinja82250/certificates/a8ab218d5950c29861635cc0bf12fd13
-{{< figure library="true" src="git_course.jpg" >}}
-
-
+**Course Link**
+The link: https://www.educative.io/courses/working-with-containers-docker-docker-compose
 
 
 # The Notes

@@ -2,7 +2,7 @@
 # Course title, summary, and position.
 linktitle: SQL
 summary: Summary of most basic tools and commands to communicate with relational databases through SQL; how to manipulate data and build queries that communicate with more than one table.
-weight: 1
+weight: 4
 
 # Page metadata.
 title: SQL

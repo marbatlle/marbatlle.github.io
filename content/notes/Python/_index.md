@@ -2,7 +2,7 @@
 # Course title, summary, and position.
 linktitle: Python
 summary: Python is a programming and scripting language of utmost importance in scientific computing, in particular in biology. 
-weight: 1
+weight: 5
 
 # Page metadata.
 title: Python
@@ -18,7 +18,7 @@ type: docs  # Do not modify.
 menu:
   example:
     name: Python
-    weight: 3
+    weight: 5
 ---
 
 **Python** 

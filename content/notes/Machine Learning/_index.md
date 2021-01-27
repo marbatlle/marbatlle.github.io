@@ -2,7 +2,7 @@
 # Course title, summary, and position.
 linktitle: Machine Learning
 summary: " Machine learning has a wide range of applications and an incredible ability to adapt and provide solutions to complex problems efficiently, effectively and quickly."
-weight: 5
+weight: 6
 
 # Page metadata.
 title: Why Machine Learning? 
@@ -18,7 +18,7 @@ type: docs  # Do not modify.
 menu:
   example:
     name: Machine Learning
-    weight: 5
+    weight: 6
 ---
 
 Machine Learning models allow the vast majority of data to be handled with an accurate generation of predictions. Applying the created patterns when new input is introduced, wile optimizing the models. This way, ML models learn to adapt to new example and produce better results

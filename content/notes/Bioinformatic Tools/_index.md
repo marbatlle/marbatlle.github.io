@@ -2,7 +2,7 @@
 # Course title, summary, and position.
 linktitle: Bioinformatic Tools
 summary: Compilation of different tools and resources used in bioinformatics
-weight: 1
+weight: 2
 
 # Page metadata.
 title: Bioinformatic Tools
@@ -18,11 +18,10 @@ type: docs  # Do not modify.
 menu:
   example:
     name: Bioinformatic Tools
-    weight: 1
+    weight: 2
 ---
 
 These include:
-* Conda Environment
 * Git
 * Docker
 
