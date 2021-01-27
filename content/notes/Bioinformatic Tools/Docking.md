@@ -48,3 +48,27 @@ A container is an instance of an image, which simulates the required environment
 
 ### Download Docker for Linux
 Followed this tutorial: https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04
+
+## 2. Docker Fundamentals
+### Layers - Building Blocks in Docker
+As every image is built on top of Linux kernel, it has some common dependencies that can be reused by other images. Docker bundles these dependencies in one stack and these stacks are called layers.
+
+Only the instructions RUN, COPY, and ADD create layers. Other instructions create temporary intermediate images and do not increase the size of the build.Docker caches these intermediate layers to speed up the image building process. 
+
+### Docker Run - Accessing Containers
+
+    docker pull \<images-name>:\<version> #pulls image from Docker registry
+    docker run \<images-name>:\<version> #runs container from mentioned image
+    docker ps #shows all running containers
+    docker ps -a #shows all available containers
+    docker exec #executes a command in a running container
+
+*Meaning of each column for ps output:*
+
+* CONTAINER ID: shows the unique ID of each container
+* IMAGE: the image from which the container is created
+* COMMAND: command executed in the container while starting it
+* CREATED: the time the container was created
+* STATUS: the current status of the container
+* PORTS: if any of the container ports is connected to the host machine, it will be displayed here
+* NAMES: this is the name of a container. If it is not provided while creating the container, Docker provides a unique name by default.
