@@ -7,10 +7,10 @@ draft: false
 menu:
   example:
     parent: Bioinformatic Tools
-    weight: 8
+    weight: 1
 
 # Prev/next pager order (if `docs_section_pager` enabled in `params.toml`)
-weight: 8
+weight: 1
 ---
 
 Notes from the *Learn Git* course from Codecademy:
