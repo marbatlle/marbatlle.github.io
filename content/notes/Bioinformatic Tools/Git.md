@@ -1,12 +1,12 @@
 ---
-title: 8. Git Repository
-linktitle: 8. Git Repository
+title: Git Repository
+linktitle: Git Repository
 type: docs
 date: "2019-05-05T00:00:00+01:00"
 draft: false
 menu:
   example:
-    parent: Command Line
+    parent: Bioinformatic Tools
     weight: 8
 
 # Prev/next pager order (if `docs_section_pager` enabled in `params.toml`)
@@ -20,8 +20,6 @@ Notes from the *Learn Git* course from Codecademy:
 **Course Certificate**
 The link: https://www.codecademy.com/profiles/netNinja82250/certificates/a8ab218d5950c29861635cc0bf12fd13
 {{< figure library="true" src="git_course.jpg" >}}
-
-
 
 
 # The Notes
