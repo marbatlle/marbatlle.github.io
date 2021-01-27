@@ -112,3 +112,19 @@ To commit changes to the container and create a new image from it, we need to ch
     $ sudo docker login #login to your docker account
     $ sudo docker tag <image_name> <your_docker_hub_username>/<image>:<version> #user tag
     $ sudo docker push <your_docker_hub_username>/<image>:<version> #push image online
+
+## Managing Data for Containers
+ Whenever you create a container from an image, it creates a new container without any data except the image data. We created the date-project image, which is a very small image. It has only one project file which we created in the container file system. If the container is removed before committing the changes, we will lose the data. So, it is always good practice to separate your data’s file system from the container’s file system.
+
+ Whenever a container is created, a file system is also created with it, which is a default Linux filesystem. Although Docker shares the OS’s kernel, there is a separation between file systems.
+
+Most times, you need to access the host files in the container for faster access to data and while coding as well, because you cannot code, build, and then check your code.
+
+Docker’s bind mount and volumes can be used in such cases.
+
+    $ docker volume --help #to get the volume help
+    $ docker volume create #to create a new volume
+    $ docker inspect volume #to inspect the created volume
+    $ docker run -v #to mount a volume
+
+{{< figure library="true" src="docker2.jpg" >}}
