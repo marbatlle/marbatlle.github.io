@@ -129,7 +129,7 @@ Docker’s bind mount and volumes can be used in such cases.
 
 {{< figure library="true" src="docker2.jpg" >}}
 
-### Bind mount
+#### Bind mount
 In bind mount, you use the host filesystem and mount it on the container using -v flag with the run command.
 
     $ docker run -it -v <absolute_path>:<folder path or new folder name> date_project:1.0
@@ -139,5 +139,35 @@ You can mount the user's desktop folder into the container, if you cd into it, y
     # To mount the file system as read-only, use ro flag. 
     $ docker run -it -v <absolute_path>:<folder path or new folder name>:ro date_project:1.0
 
+#### Volumes
+Bind mount has some limitations and is dependent on the host’s file system. If a folder is accidentally deleted from the host, Docker can’t do anything. On the other hand, volumes are created in Docker space which provides more control over using the Docker CLI.
 
-    https://www.educative.io/courses/working-with-containers-docker-docker-compose/B1GEgE68n52
+Docker volumes are mostly created to share data within different containers, rather than sharing data with host and container.
+
+#let's create one volume
+
+    $ docker volume --help #to see all available options
+    $ docker volume create <volume_name> #create one volume
+    #if you don't provide the volume name, Docker will assign a random unique one
+    $ docker volume inspect <volume_name> #inspect the docker
+    $ docker run -it -v project_directory:/project date_project:1.0 #run the container
+
+We have successfully mounted the volume onto the container file system. Now, let’s share this volume with another container so that the newly-created app folder should be accessible to the newly-created container.
+
+    $ docker run -it -v project_directory:/project_in_second --name second_container date_project:1.0
+
+So, using volumes, we can share data in different containers. Volumes are more reliable than bind mounts.
+
+### Docker Commands Lookup Table
+
+|Command                        |Action                                                                                        |
+|-------------------------------|----------------------------------------------------------------------------------------------|
+|docker ps                      |Lists all running containers. -a option will list stopped and running both                    |
+|docker inspect [container_name]|Provides all info about the container                                                         |
+|docker stop [container_name]   |Stops the running container                                                                   |
+|docker kill [container_name]   |Kills(stops) the container and removes the container from the system                          |
+|docker rmi [image/s]           |Removes the provided image                                                                    |
+|docker images                  |Lists all images on the system                                                                |
+|docker exec [-it]              |Executes command in a Docker container                                                        |
+|docker system                  |Gets the Docker system information such as memory usage and housekeeping stuff                |
+|docker system prune            |This command will save you from getting the “No memory left” nightmare with production systems|
