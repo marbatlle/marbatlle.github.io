@@ -25,6 +25,8 @@ Machine Learning models allow the vast majority of data to be handled with an ac
 
 ## Types of Machine Learning
 
+{{< figure library="true" src="ml_map.jpg" >}}
+
 ### Supervised Learning
 In Supervised Learning, the dataset on which we train our model is labeled; there is a clear and distinct mapping of input an output.
 
