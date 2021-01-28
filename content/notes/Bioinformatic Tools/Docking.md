@@ -144,8 +144,7 @@ Bind mount has some limitations and is dependent on the host’s file system. If
 
 Docker volumes are mostly created to share data within different containers, rather than sharing data with host and container.
 
-#let's create one volume
-
+    #let's create one volume
     $ docker volume --help #to see all available options
     $ docker volume create <volume_name> #create one volume
     #if you don't provide the volume name, Docker will assign a random unique one
@@ -157,6 +156,33 @@ We have successfully mounted the volume onto the container file system. Now, let
     $ docker run -it -v project_directory:/project_in_second --name second_container date_project:1.0
 
 So, using volumes, we can share data in different containers. Volumes are more reliable than bind mounts.
+
+**Problem example:**
+
+1. Pull the Python 3.8 image and keep track the number of layers it has fetched.
+
+        $ docker pull python:3.8
+
+2. Create a Docker volume named app_files.
+
+        $ docker volume create <volume_name>
+
+3. Create a container named ‘first_container’ from the Python 3.8 image with app_files volume attached to it.
+
+        $ docker inspect app_files #to know the patch of the volume to mount it on the container filesystem.
+        $ docker run -it --name <name-of-the-container> -v <volume>:<container-path> <image> <command>
+
+4. Write a Python program named ‘current_time.py’ to display the current timestamp inside the app_files volume.
+
+        $ cd app_files && touch current_time.py
+
+5. Create another container named ‘second_container’ from the Python 3.8 image and update the Python script located in ‘app_files’ volume to print the current date.
+
+        $ exit
+        $ docker run -it --name "second_container" -v /usercode/app_files:/app_files python:3.8 bash
+        $ python current_time.py
+
+
 
 ### Docker Commands Lookup Table
 
@@ -171,3 +197,5 @@ So, using volumes, we can share data in different containers. Volumes are more r
 |docker exec [-it]              |Executes command in a Docker container                                                        |
 |docker system                  |Gets the Docker system information such as memory usage and housekeeping stuff                |
 |docker system prune            |This command will save you from getting the “No memory left” nightmare with production systems|
+
+
