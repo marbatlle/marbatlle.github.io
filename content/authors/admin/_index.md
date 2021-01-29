@@ -50,9 +50,6 @@ social:
 - icon: github
   icon_pack: fab
   link: https://github.com/marbatlle
-- icon: kaggle
-  icon_pack: fab
-  link: https://www.kaggle.com/marbatlle
 - icon: envelope
   icon_pack: fas
   link: 'mailto:marbatlleperez@gmail.com'  
