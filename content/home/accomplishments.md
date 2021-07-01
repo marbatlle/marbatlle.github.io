@@ -12,7 +12,7 @@ headless: true
 # Order that this section appears on the page.
 weight: 3
 
-title: Courses and Certificates
+title: MOOCs and Certificates
 subtitle:
 
 # Date format
