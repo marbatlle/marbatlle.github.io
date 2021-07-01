@@ -25,14 +25,6 @@ date_format: Jan 2006
 #   Leave other parameters empty if not required.
 #   You can begin a multiline `description` using YAML's `|-`.
 item:
-- certificate_url: ""
-  date_end: "2020-10-01"
-  date_start: "2020-08-01"
-  description: This specialization includes the following courses; Introduction to Genomic Technoligies, Genomic Data Science with Galaxy, Python for Genomic Data Science, Algorithms for DNA Sequencing, Command Line Tools for Genomic Data Science, Bioconductor for Genomic Data Science, Statistics for Genomic Data Science.
-  organization: John Hopkins University - Coursera
-  organization_url: https://www.coursera.org
-  title: Genomic Data Science Specialization
-  url: https://www.coursera.org/specializations/genomic-data-science
 - certificate_url: "https://coursera.org/share/63b3a5fedb2542bb49ef1e3e8c218e25"
   date_end: ""
   date_start: "2021-06-01"
@@ -41,6 +33,14 @@ item:
   organization_url: https://www.coursera.org
   title: Introduction to Clinical Data Science
   url: "https://www.coursera.org/learn/introduction-clinical-data-science"
+- certificate_url: ""
+  date_end: "2020-10-01"
+  date_start: "2020-08-01"
+  description: This specialization includes the following courses; Introduction to Genomic Technoligies, Genomic Data Science with Galaxy, Python for Genomic Data Science, Algorithms for DNA Sequencing, Command Line Tools for Genomic Data Science, Bioconductor for Genomic Data Science, Statistics for Genomic Data Science.
+  organization: John Hopkins University - Coursera
+  organization_url: https://www.coursera.org
+  title: Genomic Data Science Specialization
+  url: https://www.coursera.org/specializations/genomic-data-science
 - certificate_url: "https://www.datacamp.com/statement-of-accomplishment/track/b29f556fb194418b3656190d68c0a3270de1b1dc"
   date_end: "2020-07-29"
   date_start: "2020-04-20"
