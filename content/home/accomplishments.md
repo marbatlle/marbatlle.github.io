@@ -25,6 +25,14 @@ date_format: Jan 2006
 #   Leave other parameters empty if not required.
 #   You can begin a multiline `description` using YAML's `|-`.
 item:
+- certificate_url: "https://coursera.org/share/63b3a5fedb2542bb49ef1e3e8c218e25"
+  date_end: ""
+  date_start: "2021-06-01"
+  description: In this course you learn how clinical data are generated, the format of these data, and the ethical and legal restrictions on these data, including manipulation with SQL and R.
+  organization: John Hopkins University - Coursera
+  organization_url: https://www.coursera.org
+  title: Introduction to Clinical Data Science
+  url: "https://www.coursera.org/learn/introduction-clinical-data-science"
 - certificate_url: ""
   date_end: "2020-10-01"
   date_start: "2020-08-01"
