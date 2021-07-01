@@ -75,7 +75,7 @@ user_groups:
 ---
 # Hi there.
 
-I'm Mar and I'm from the lively city of Barcelona. I attended Universitat de Girona where I earned my BSc in Biotechnology. During school, I ended up working as the program director at a summer camp in the picturesque area of Algonquin Park, in Ontario, Canada. But the COVID-19 pandemic, turned my plans upside down and gave me the time to change my focus and break into a new and exciting career path. I started grad school at the National School of Health, ISCIII in their Master's of Precision Medicine and Health Bioinformatics. Now doing a bioinformatics internship at the Barcelona Supercomputing Center, focusing in multilayer networks and Hepatoblastoma.
+I'm Mar and I'm from the lively city of Barcelona. I attended Universitat de Girona where I earned my BSc in Biotechnology. During school, I ended up working as the program director at a summer camp in the picturesque area of Algonquin Park, in Ontario, Canada. But the COVID-19 pandemic, turned my plans upside down and gave me the time to change my focus and break into a new and exciting career path. I started grad school at the National School of Health, ISCIII in their Master's of Precision Medicine and Health Bioinformatics. Now doing an internship at the Barcelona Supercomputing Center, focusing in the study of multilayer networks and Hepatoblastoma.
 
 This website is meant to be a portfolio of all my side projects and some of my school projects. It'll also contain the summary of some of my notes and resources curated during this learning path.
 
