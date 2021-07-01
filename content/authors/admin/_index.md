@@ -22,10 +22,9 @@ bio: Biotechnologist with a great interest in learning how to apply Bioinformati
 
 
 interests:
-- Translational Bioinformatics
-- ML for Precision Medicine
+- Genomic Data Science
 - Innovative Teaching Methods in Science
-- 35mm Film Photography and Videography
+- NGS and Biotech Stock Market
 
 education:
   courses:
