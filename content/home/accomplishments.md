@@ -29,7 +29,7 @@ item:
   date_end: ""
   date_start: "2021-06-01"
   description: In this course you learn how clinical data are generated, the format of these data, and the ethical and legal restrictions on these data, including manipulation with SQL and R.
-  organization: John Hopkins University - Coursera
+  organization: University of Colorado - Google Cloud
   organization_url: https://www.coursera.org
   title: Introduction to Clinical Data Science
   url: "https://www.coursera.org/learn/introduction-clinical-data-science"
