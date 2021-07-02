@@ -24,7 +24,7 @@ bio: Biotechnologist with a great interest in learning how to apply Bioinformati
 interests:
 - Genomic Data Science
 - Innovative Teaching Methods in Science
-- NGS and Biotech Stock Market
+- NGS and Biotech Industry and Stock Market
 
 education:
   courses:
