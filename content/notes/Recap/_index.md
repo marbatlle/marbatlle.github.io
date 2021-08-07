@@ -18,6 +18,6 @@ type: docs  # Do not modify.
 menu:
   example:
     name: Recap
-    weight: 4
+    weight: 6
 ---
 
