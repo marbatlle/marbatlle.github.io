@@ -29,8 +29,3 @@ This palette is inspired by journals published by Nature Publishing Group:
 - https://medium.com/@morganjonesartist/color-guide-to-seaborn-palettes-da849406d44f
 - https://towardsdatascience.com/how-to-use-your-own-color-palettes-with-seaborn-a45bf5175146
 
-
-
-<!-- Coolors Palette Widget -->
-      <script src="https://coolors.co/palette-widget/widget.js"></script>
-      <script data-id="023382688283239172">new CoolorsPaletteWidget("023382688283239172", ["f4f1de","e07a5f","3d405b","81b29a","f2cc8f"]); </script>
