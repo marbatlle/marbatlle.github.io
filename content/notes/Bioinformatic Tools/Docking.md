@@ -199,5 +199,7 @@ So, using volumes, we can share data in different containers. Volumes are more r
 |docker system prune            |This command will save you from getting the “No memory left” nightmare with production systems|
 
 ### Commands CheatSheet
-{{< figure library="true" src="socker_cheat.png" >}}
+
+{{< figure library="true" src="docker_cheat.png" >}}
+
 Font: https://dockerlabs.collabnix.com/docker/cheatsheet/
