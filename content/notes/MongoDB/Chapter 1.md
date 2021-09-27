@@ -14,62 +14,43 @@ menu:
 weight: 1
 ---
 
-#### Column Constraints
-Column constraints are the rules applied to the values of individual columns:
+### What is MongoDB
 
-* *PRIMARY KEY* constraint can be used to uniquely identify the row.
-* *UNIQUE* columns have a different value for every row.
-* *NOT NULL* columns must have a value.
-* *DEFAULT* assigns a default value for the column when no value is specified.
+* **A database**: structured way to store and access data
+* **A NoSQL database**: related tables of data
+* **NoSQL documentsDB**: data in MongoDB is stored as documents
+* **Stored in Collections**: documents are stored in collection of documents
 
-There can be only one *PRIMARY KEY* column per table and multiple *UNIQUE* columns.
+### MongoDB Atlas
+MongoDB Atlas is a fully-managed cloud database developed by the same people that build MongoDB. Atlas handles all the complexity of deploying, managing, and healing your deployments on the cloud service provider of your choice (AWS, Azure, and GCP).
 
-        CREATE TABLE student (
-        id INTEGER PRIMARY KEY,
-        name TEXT UNIQUE,
-        grade INTEGER NOT NULL,
-        age INTEGER DEFAULT 10
-        );
+* Atlas: https://cloud.mongodb.com/v2/5fbe56b9cd3fab68c99facc1#clusters
+* username: m001-student
+* password: m001-mongodb-basics
 
-#### CREATE TABLE Statment
-The *CREATE TABLE* statement creates a new table in a database. It allows one to specify the name of the table and the name of each column in the table.
+Atlas users can deploy **clusters** (groups of servers that store your data), configured in **replica sets** ( a few connected MongoDB instances that store the same data)
 
-        CREATE TABLE table_name (
-        column1 datatype,
-        column2 datatype,
-        column3 datatype
-        );
+--------------------------------------------------------------------------
 
-#### INSERT Statement
-The *INSERT INTO* statement is used to add a new record (row) to a table.
+### Code Instances
 
-It has two forms as shown:
-* Insert into columns in order.
-* Insert into columns by name.
+ Select the database to use.
 
-        -- Insert into columns in order:
-        INSERT INTO table_name
-        VALUES (value1, value2);
-        
-        -- Insert into columns by name:
-        INSERT INTO table_name (column1, column2)
-        VALUES (value1, value2);
+        use('sample_training');
 
-#### ALTER TABLE Statement
-The *ALTER TABLE* statement is used to modify the columns of an existing table. When combined with the *ADD COLUMN* clause, it is used to add a new column.
+        db.trips.createIndex({ "start station id": 1, "birth year": 1 })
 
-        ALTER TABLE table_name
-        ADD column_name datatype;
+ Trips starting west of -74 Latitude
 
-#### DELETE Statement
-The *DELETE* statement is used to delete records (rows) in a table. The *WHERE* clause specifies which record or records that should be deleted. If the *WHERE* clause is omitted, all records will be deleted.
+        db.trips.find({'start station location.coordinates.0': {'$lt': -74}})
 
-        DELETE FROM table_name
-        WHERE some_column = some_value;
+ All Ceos named Mark
 
-#### UPDATE Statement
-The *UPDATE* statement is used to edit records (rows) in a table. It includes a *SET* clause that indicates the column to edit and a *WHERE* clause for specifying the record(s).
+        db.companies.find({'relationships.0.person.first_name': 'Mark', 'relationships.0.title': {'$regex': 'CEO'}},
+        {'name': 1}).pretty()
 
-        UPDATE table_name
-        SET column1 = value1, column2 = value2
-        WHERE some_column = some_value;
+ Return names only
+
+        db.companies.find({'funding_rounds': {'$size': 8}},
+        {'name': 1, "_id": 0}
+        )

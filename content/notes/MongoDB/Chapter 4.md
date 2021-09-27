@@ -13,41 +13,181 @@ menu:
 # Prev/next pager order (if `docs_section_pager` enabled in `params.toml`)
 weight: 4
 ---
+_**LOGICAL OPERATORS:**_
 
-## Comparision Operators
+`$eq `-> equal 
 
-- $__eq__   - Equal to
-- $__ne__   - Not Equal to
-- $__gt__   - Greater Than
-- $__lt__   - Less Than
-- $__gte__  - Greater Than Equal to
-- $__lte__  - Less Than Equal to
+`$neq` -> not equal 
 
-`{ <field>: { <operator> : <value> }}`
-   
-Problem: Find all documents where the tripduration was less than or equal to 70 seconds and the usertype was not Subscriber.<br>
-`db.trips.find({ "tripduration": { "$lte" : 70 },
-                "usertype": { "$ne": "Subscriber" } }).pretty()`
+`$lt `-> less than 
 
+`$gt` -> greater than  
 
-## Logical Operators
+`$lte` -> less than or equal to 
 
-- $__and__  - Match all of the specified query clauses.
-- $__or__   - Atleast one of the query clauses is matched.
-- $__nor__  - Fail to match both given clauses.
-- $__not__  - Negate the query requirement.
+`$gte` -> greater than or equal to
 
-##### Implicit $and
-$and is used as the default operator when an operator is not specified.
+syntax: `{ field : { operator : value }}`
 
-        {sector: 'Mobile Food Vendor - 881', result: 'Warning'}
+Find all documents where the tripduration was less than or equal to 70 seconds and the usertype was not Subscriber:
 
-is same as
+`db.trips.find({ "tripduration": { "$lte" : 70 },`
+                `"usertype": { "$ne": "Subscriber" } }).pretty()`
+				
+Find all documents where the tripduration was less than or equal to 70 seconds and the usertype was Customer using a redundant equality operator:
 
-        {"$and": [
-        {sector: 'Mobile Food Vendor - 881'}, 
-        {result: 'Warning'}
-        ]}
+`db.trips.find({ "tripduration": { "$lte" : 70 },`
+                `"usertype": { "$eq": "Customer" }}).pretty()`
+				
+Find all documents where the tripduration was less than or equal to 70 seconds and the usertype was Customer using the implicit equality operator:
+
+`db.trips.find({ "tripduration": { "$lte" : 70 },`
+                `"usertype": "Customer" }).pretty()`
+
+syntax: `{ field: { operator : [{statement 1, statement 2...}]}}`
+				
+`$and` -> match all of the specified query class
+
+`$or` -> atleast one of the query clause matches
+
+`$nor` -> Fail to match both the clause
+
+syntax: `{ field: { operator : {statement}}`
+
+`$not` -> Negates the query requirement
+
+`$and` operator is used when you want to apply and more than once in an explicit query
+
+Find all documents where airplanes CR2 or A81 left or landed in the KZN airport:
+
+`db.routes.find({ "$and": [ { "$or" :[ { "dst_airport": "KZN" },
+                                    { "src_airport": "KZN" }
+                                  ] },
+                          { "$or" :[ { "airplane": "CR2" },
+                                     { "airplane": "A81" } ] }
+                         ]}).pretty()`
+
+**Expressive Query Language**: `$expr`
+* It allows the use of aggregation expressions within the query language.
+* Allows to use variables and conditional expressions.
+* Used to compare same field of same document.
+
+Find all documents where the trip started and ended at the same station:
+
+`db.trips.find({ "$expr": { "$eq": [ "$end station id", "$start station id"] }
+              }).count()`
+ 
+Find all documents where the trip lasted longer than 1200 seconds, and started and ended at the same station:
+
+`db.trips.find({ "$expr": { "$and": [ { "$gt": [ "$tripduration", 1200 ]},
+                         { "$eq": [ "$end station id", "$start station id" ]}
+                       ]}}).count()`
+
+NOTE : When comparing with value use syntax `field : { operator : value }` 
+
+when comparing with field use `$expr` syntax `$expr  : { operator : [ field1, field2]} 
+
+**Array operations:**
+
+* `$push` allows to add an element to array.
+* Turns field to an array field if it was a previously a different value.
+
+Returns all documents in which a particular value present in an array:
+
+`db.airbnb.find({"amenties": "wifi"})`
+
+Returns all documents that matches all the specified values with same order:
+
+`db.airbnb.find({"amenties": ["wifi", "Internet", ... ]})`
+
+Returns all documents that matches all the specified values without order:
+
+`db.airbnb.find({"amenties":{"$all": ["wifi", "Internet", ... ]}})`
+
+Returns all documents that matches specified size:
+
+`db.airbnb.find({"amenties":{"$size": 20}})`
+
+Find all documents with exactly 20 amenities which include all the amenities listed in the query array:
+
+`db.listingsAndReviews.find({ "amenities": {
+                                  "$size": 20,
+                                  "$all": [ "Internet", "Wifi",  "Kitchen",
+                                           "Heating", "Family/kid friendly",
+                                           "Washer", "Dryer", "Essentials",
+                                           "Shampoo", "Hangers",
+                                           "Hair dryer", "Iron",
+                                           "Laptop friendly workspace" ]
+                                         }
+                            }).pretty()`
+
+**Projection Syntax:**
+
+`db.<collection>.find({ <query> },{ <projection> })`
+
+1 -> include the field
+0 -> exclude the field
+
+You cannot use both include and exclude in the same query
+
+Exception: for id field
+
+`db.<collection>.find({ <query> }, { <field> : 1, "_id": 0 })`
+
+`$elemMatch`: Matches documents that contain an array field with at least one element that matches the specified query criteria.
+
+or
+
+Projects only the array elements with at least one element that matches the specified criteria.
+
+Find all documents with exactly 20 amenities which include all the amenities listed in the query array, and display their price and address:
+
+`db.listingsAndReviews.find({ "amenities":
+        { "$size": 20, "$all": [ "Internet", "Wifi",  "Kitchen", "Heating",
+                                 "Family/kid friendly", "Washer", "Dryer",
+                                 "Essentials", "Shampoo", "Hangers",
+                                 "Hair dryer", "Iron",
+                                 "Laptop friendly workspace" ] } },
+                            {"price": 1, "address": 1}).pretty()`
+ 
+Find all documents that have Wifi as one of the amenities only include price and address in the resulting cursor:
+
+`db.listingsAndReviews.find({ "amenities": "Wifi" },
+                           { "price": 1, "address": 1, "_id": 0 }).pretty()`
+ 
+Find all documents that have Wifi as one of the amenities only include price and address in the resulting cursor, also exclude ``"maximum_nights"``. **This will be an error:*
+
+`db.listingsAndReviews.find({ "amenities": "Wifi" },
+                           { "price": 1, "address": 1,
+                             "_id": 0, "maximum_nights":0 }).pretty()`
+ 
+ 
+Find all documents where the student in class 431 received a grade higher than 85 for any type of assignment:
+
+`db.grades.find({ "class_id": 431 },
+               { "scores": { "$elemMatch": { "score": { "$gt": 85 } } }
+             }).pretty()`
+ 
+Find all documents where the student had an extra credit score:
+
+`db.grades.find({ "scores": { "$elemMatch": { "type": "extra credit" } }
+               }).pretty()`
+
+**Querying array and sub documents:**
+* MQL uses dot-notation to specify the address of nested elements in a document.
+* To use dot notation in arrays specify the position of the elements in the array.
+
+`db.collection.find({"field1.other field.also a field": "value"})`
+* Regex is used to match the elements
+
+`db.companies.find({ "relationships.0.person.first_name": "Mark",
+                    "relationships.0.title": { "$regex": "CEO" } }`
+* To check every elements in the array use `$elematch`
+
+`db.companies.find({ "relationships":
+                      { "$elemMatch": { "is_past": true,
+                                        "person.first_name": "Mark" } } },
+                  { "name": 1 }).count()`
 
 ------------------------------------------------------------------------------------------
 

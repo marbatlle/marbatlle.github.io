@@ -13,6 +13,66 @@ menu:
 # Prev/next pager order (if `docs_section_pager` enabled in `params.toml`)
 weight: 3
 ---
+--------------------------------------------------------------------------
+
+**INSERT:**
+
+Insert three test documents:
+
+`db.inspections.insert([ { "test": 1 }, { "test": 2 }, { "test": 3 } ])`
+
+Insert three test documents but specify the _id values:
+
+`db.inspections.insert([{ "_id": 1, "test": 1 },{ "_id": 1, "test": 2 }, { "_id": 3, "test": 3 }])`
+
+Insert multiple documents specifying the _id values, and using the "ordered": false option.
+
+`db.inspections.insert([{ "_id": 1, "test": 1 },{ "_id": 1, "test": 2 }, { "_id": 3, "test": 3 }],{ "ordered": false })`
+
+Insert multiple documents with _id: 1 with the default "ordered": true setting
+
+`db.inspection.insert([{ "_id": 1, "test": 1 },{ "_id": 3, "test": 3 }])`
+
+**UPDATE:**
+
+Update all documents in the zips collection where the city field is equal to "HUDSON" by adding 10 to the current value of the "pop" field.
+
+`db.zips.updateMany({ "city": "HUDSON" }, { "$inc": { "pop": 10 } })`
+
+$inc is used to increment the value.
+
+Update a single document in the zips collection where the zip field is equal to "12534" by setting the value of the "pop" field to 17630.
+
+`db.zips.updateOne({ "zip": "12534" }, { "$set": { "pop": 17630 } })`
+
+$set is used to update the value to particular value.
+
+Update a single document in the zips collection where the zip field is equal to "12534" by setting the value of the "popupation" field to 17630.
+
+`db.zips.updateOne({ "zip": "12534" }, { "$set": { "population": 17630 } })`
+
+Update one document in the grades collection where the student_id is 250 *, and the class_id field is 339 , by adding a document element to the "scores" array.
+
+`db.grades.updateOne({ "student_id": 250, "class_id": 339 }, { "$push": { "scores": { "type": "extra credit", "score": 100 } } })`
+
+$push is used to add a new value to already existing object.
+
+**DELETE:**
+Delete all the documents that have test field equal to 1.
+
+`db.inspections.deleteMany({ "test": 1 })`
+
+Delete one document that has test field equal to 3.
+
+`db.inspections.deleteOne({ "test": 3 })`
+
+Drop the inspection collection.
+
+`db.inspection.drop()`
+
+--------------------------------------------------------------------------
+
+## Code Instances
 Connect to database (create unless exist)
 
         use sample_training;
