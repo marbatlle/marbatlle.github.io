@@ -23,8 +23,7 @@ menu:
 
 Notes from the *MOO1-MongoDB Basics* course from MongoDB Unniversity:
 
-**Course Description**: In this course you will learn how to set up your database and start exploring different ways to search, create, and analyze your data with MongoDB. We will cover database performance basics, and discover how to get started with creating applications and visualizing your data.
+**Course Description**: In this course you will learn how to set up your database and start exploring different ways to search, create, and analyze your data with MongoDB. We will cover database performance basics, and discover how to get started with creating applications and visualizing your data. Learn more about the course at https://university.mongodb.com/courses/M001/about
 
 **Course Certificate**
-{{< figure library="true" src="certificate_sql.jpg" >}}
-The link: https://www.codecademy.com/profiles/netNinja82250/certificates/042a4e5884e3eb6ea1f2a12be6abb851
+{{< figure library="true" src="M001_proof_of_completion.jpeg" >}}
