@@ -10,7 +10,7 @@ authors:
 superuser: true
 
 # Role/position
-role: Bioinformatics Student
+role: Bioinformatics Intern
 
 # Organizations/Affiliations
 organizations:
