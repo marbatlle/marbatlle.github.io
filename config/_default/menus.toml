@@ -9,9 +9,15 @@
   weight = 10
 
 [[main]]
+  name = "CV"
+  url = "mar-portfolio/static/media/resume.pdf"
+  weight = 70
+
+[[main]]
   name = "Mar's Notes"
   url = "notes/"
   weight = 30
+
 
 
   
@@ -19,7 +25,7 @@
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
 # [[main]]
 #    name = "CV"
-#    url = "files/cv.pdf"
+#    url = "mar-portfolio/static/media/resume.pdf"
 #    weight = 70
 # [[main]]
 #   name = "Posts"
