@@ -2,8 +2,6 @@
 title: Heart Disease Prediction Notebook
 summary: Data Science Notebook on a Classification Task (Logistic Regression) using sklearn.
 tags:
-- Exploratory Data Analysis
-- Supervised Learning
 - Data Science Notebooks
 date: "2016-04-27T00:00:00Z"
 

@@ -2,8 +2,6 @@
 title: Loan Acceptance Prediction Notebook
 summary: Data Science Notebook on a Binary Classification Task using sklearn.
 tags:
-- Exploratory Data Analysis
-- Supervised Learning
 - Data Science Notebooks
 date: "2016-04-27T00:00:00Z"
 
