@@ -2,8 +2,7 @@
 title: Next-Generation Sequencing Trading
 summary: Trade Market analysis of some of the most recognized public NGS Companies
 tags:
-- NGS
-- Trade Market
+- Other
 date: "2016-04-27T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
