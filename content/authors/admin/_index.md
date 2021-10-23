@@ -13,9 +13,9 @@ superuser: true
 role: Bioinformatics Intern
 
 # Organizations/Affiliations
-organizations:
-- name: National School of Health, ISCIII
-  url: http://www.masterbioinformatica.com
+#organizations:
+#- name: National School of Health, ISCIII
+#  url: http://www.masterbioinformatica.com
 
 # Short bio (displayed in user profile at end of posts)
 bio: Biotechnologist with a great interest in learning how to apply Bioinformatics to Precision Medicine
