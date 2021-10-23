@@ -6,17 +6,13 @@
 [[main]]
   name = "Home"
   url = "#about"
-  weight = 10
+  weight = 1
 
-[[main]]
-  name = "CV"
-  url = "mar-portfolio/static/media/resume.pdf"
-  weight = 70
 
 [[main]]
   name = "Mar's Notes"
   url = "notes/"
-  weight = 30
+  weight = 2
 
 
 
