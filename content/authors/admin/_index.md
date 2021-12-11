@@ -82,4 +82,4 @@ The COVID-19 pandemic turned my plans upside down, and gave me the time to chang
 
 This website is meant to be a portfolio of my side projects and some of my school projects, including notes and resources curated during this learning path.
 
-{{< icon name="download" pack="fas" >}} Download my {{< staticref "media/resume.pdf" "newtab" >}}resume{{< /staticref >}}.
+{{< icon name="download" pack="fas" >}} Download my {{< staticref "media/resume.pdf" "newtab" >}}resume{{< /staticref >}}
