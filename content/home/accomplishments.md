@@ -1,10 +1,10 @@
-+++
+---
 # An instance of the Accomplishments widget.
 # Documentation: https://sourcethemes.com/academic/docs/page-builder/
 widget: accomplishments
 
 # Activate this widget? true/false
-active: true
+active: false
 
 # This file represents a page section.
 headless: true
@@ -66,4 +66,4 @@ item:
   title: Statistical Inference
   url: "http://cv.uoc.edu/tren/trenacc/web/GAT_EXP.PLANDOCENTE?any_academico=20202&cod_asignatura=M0.155&idioma=CAS&pagina=PD_PREV_PORTAL&"
   
-+++
+---
