@@ -10,7 +10,7 @@ authors:
 superuser: true
 
 # Role/position
-role: BIOINFORMATICS AND BIOTECH
+role: Bioinformatics and Biotech
 
 # Organizations/Affiliations
 #organizations:
