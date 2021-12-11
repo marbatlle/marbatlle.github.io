@@ -22,9 +22,9 @@ bio: Biotechnologist with a great interest in learning how to apply Bioinformati
 
 
 interests:
-- Genomic Data Science
+- Genomics Data Science
+- Data Visualization
 - Innovative Teaching Methods in Science
-- NGS and Biotech Industry and Stock Market
 
 education:
   courses:
