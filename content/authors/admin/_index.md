@@ -10,7 +10,7 @@ authors:
 superuser: true
 
 # Role/position
-role: Bioinformatics Intern
+role: BIOINFORMATICS AND BIOTECH
 
 # Organizations/Affiliations
 #organizations:
