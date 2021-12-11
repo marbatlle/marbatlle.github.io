@@ -21,7 +21,7 @@ role: Bioinformatics and Biotech
 bio: Biotechnologist with a great interest in learning how to apply Bioinformatics to Precision Medicine
 
 
-interests:
+research interests:
 - Genomics Data Science
 - Data Visualization
 - Innovative Teaching Methods in Science
@@ -79,7 +79,7 @@ I'm Mar Batlle. I'm a Bioinformatics Research Intern at Barcelona Supercomputing
 
 I attended Universitat de Girona where I earned my BSc in Biotechnology. During school, I ended up working as the program director and hiring managet at a summer camp in the picturesque area of Algonquin Park, in Ontario, Canada. 
 
-The COVID-19 pandemic, turned my plans upside down and gave me the time to change my focus and break into a new and exciting career path, bioinformatics. I started grad school at the National School of Health, ISCIII and graduated with a Master's of Bioinformatics Applied to Precision Medicine and Health.
+The COVID-19 pandemic turned my plans upside down, and gave me the time to change my focus and break into a new and exciting career path, bioinformatics. I started grad school at the National School of Health, ISCIII and graduated with a Master's of Bioinformatics Applied to Precision Medicine and Health.
 
 This website is meant to be a portfolio of my side projects and some of my school projects, including notes and resources curated during this learning path.
 
