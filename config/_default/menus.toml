@@ -14,11 +14,6 @@
   url = "notes/"
   weight = 2
 
-[[main]]
-  name = "Projects"
-  url = "projects/"
-  weight = 3
-
 
 
   

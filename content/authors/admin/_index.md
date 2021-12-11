@@ -20,7 +20,6 @@ role: Bioinformatics and Biotech
 # Short bio (displayed in user profile at end of posts)
 bio: Biotechnologist with a great interest in learning how to apply Bioinformatics to Precision Medicine
 
-
 research interests:
 - Genomics Data Science
 - Data Visualization
