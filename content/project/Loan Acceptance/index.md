@@ -2,7 +2,7 @@
 title: Loan Acceptance Prediction Notebook
 summary: Data Science Notebook on a Binary Classification Task using sklearn.
 tags:
-- Data Science Notebooks
+- Data Science
 date: "2016-04-27T00:00:00Z"
 # https://github.com/marbatlle/Machine_Learning_Projects/blob/main/Loan%20Prediction%20-%20Binary%20Classification/LoanPrediction.ipynb
 # Optional external URL for project (replaces project detail page).

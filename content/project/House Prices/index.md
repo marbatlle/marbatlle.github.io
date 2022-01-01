@@ -2,7 +2,7 @@
 title: House Prices Prediction Notebook
 summary: Data Science Notebook on Regression Task using Regularized Linear Models from sklearn.
 tags:
-- Data Science Notebooks
+- Data Science
 date: "2016-04-27T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).

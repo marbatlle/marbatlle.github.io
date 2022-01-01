@@ -26,16 +26,16 @@ subtitle = ""
     tag = "*"
   
   [[content.filter_button]]
-    name = "Data Science Notebooks"
-    tag = "Data Science Notebooks"
+    name = "Data Science"
+    tag = "Data Science"
 
   [[content.filter_button]]
-    name = "Omics Projects"
-    tag = "Omics Projects"
+    name = "Omics"
+    tag = "Omics"
 
   [[content.filter_button]]
-    name = "Other"
-    tag = "Other"
+    name = "Data Viz"
+    tag = "Data Viz"
 
 
 [design]

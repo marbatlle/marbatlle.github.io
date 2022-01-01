@@ -2,7 +2,7 @@
 title: SNVs Detection Pipe
 summary: Sample pipeline for variant analysis of Whole-Exome Sequencing data.
 tags:
-- Omics Projects
+- Omics
 date: "2016-04-27T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
