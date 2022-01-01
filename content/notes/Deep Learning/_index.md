@@ -1,11 +1,11 @@
 ---
 # Course title, summary, and position.
-linktitle: Recap
-summary: A bit of everything
-weight: 6
+linktitle: Deep Learning for Coders
+summary: Note from the book 'Deep Learning for Coders with fastai and Pytorch'
+weight: 8
 
 # Page metadata.
-title: Recap
+title: Deep Learning for Coders
 date: "2018-09-09T00:00:00Z"
 lastmod: "2018-09-09T00:00:00Z"
 draft: false  # Is this a draft? true/false
@@ -17,7 +17,7 @@ type: docs  # Do not modify.
 # - weight: Position of link in menu.
 menu:
   example:
-    name: Recap
+    name: Deep Learning for Coders
     weight: 6
 ---
 
