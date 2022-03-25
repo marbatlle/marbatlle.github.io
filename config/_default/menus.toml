@@ -15,7 +15,7 @@
   weight = 2
 
 [[main]]
-  name = "CV"
+  name = "Master's Thesis"
   url = "mar-portfolio/static/media/MastersThesis_MarBatlle.pdf"
   weight = 70
 
