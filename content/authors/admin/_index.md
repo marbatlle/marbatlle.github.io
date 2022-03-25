@@ -80,4 +80,8 @@ I attended Universitat de Girona where I earned my BSc in Biotechnology. During 
 
 The COVID-19 pandemic turned my plans upside down, and gave me the time to change my focus and break into a new and exciting career path, bioinformatics. I started grad school at the National School of Health, ISCIII and graduated with a Master's of Bioinformatics Applied to Precision Medicine and Health.
 
+
+{{< icon name="download" pack="fas" >}} Check out my {{< staticref "media/static/media/MastersThesis_MarBatlle.pdf
+" "newtab" >}}master's thesis{{< /staticref >}}
+
 {{< icon name="download" pack="fas" >}} Download my {{< staticref "media/resume.pdf" "newtab" >}}resume{{< /staticref >}}
