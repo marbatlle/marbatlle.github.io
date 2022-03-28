@@ -12,7 +12,7 @@ publishDate: "2017-01-01T00:00:00Z"
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Patent
-publication_types: ["3"]
+publication_types: ["7"]
 
 # Publication name and optional abbreviated publication name.
 publication: ""
@@ -29,8 +29,8 @@ featured: false
 
 links:
 - name: Custom Link
-  url: http://example.org
-url_pdf: http://arxiv.org/pdf/1512.04133v1
+  url: https://dugi-doc.udg.edu/handle/10256/16406
+url_pdf: https://dugi-doc.udg.edu/bitstream/handle/10256/16406/batlleperez.mar.pdf?sequence=1&isAllowed=y
 url_code: '#'
 url_dataset: '#'
 url_poster: '#'
@@ -51,15 +51,14 @@ image:
 #   Simply enter your project's folder or file name without extension.
 #   E.g. `internal-project` references `content/project/internal-project/index.md`.
 #   Otherwise, set `projects: []`.
-projects:
-- internal-project
+projects: []
 
 # Slides (optional).
 #   Associate this publication with Markdown slides.
 #   Simply enter your slide deck's filename without extension.
 #   E.g. `slides: "example"` references `content/slides/example/index.md`.
 #   Otherwise, set `slides: ""`.
-slides: example
+slides: ""`
 ---
 
 {{% alert note %}}
