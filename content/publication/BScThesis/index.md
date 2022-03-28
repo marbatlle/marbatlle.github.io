@@ -29,8 +29,8 @@ featured: false
 
 links:
 - name: Custom Link
-  url: https://dugi-doc.udg.edu/handle/10256/16406
-url_pdf: https://dugi-doc.udg.edu/bitstream/handle/10256/16406/batlleperez.mar.pdf?sequence=1&isAllowed=y
+  url: http://example.org
+url_pdf: http://arxiv.org/pdf/1512.04133v1
 url_code: '#'
 url_dataset: '#'
 url_poster: '#'
