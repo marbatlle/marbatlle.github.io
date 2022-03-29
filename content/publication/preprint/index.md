@@ -24,7 +24,6 @@ abstract: The cattle industry is constantly evolving due to an increasing demand
 summary: "      "
 
 tags:
-- Source Themes
 featured: false
 
 links:
