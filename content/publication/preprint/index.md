@@ -18,9 +18,7 @@ publication_types: ["7"]
 publication: ""
 publication_short: ""
 
-abstract: The cattle industry is constantly evolving due to an increasing demand for livestock products. The need to breed more cattle and the increase of the temperatures due to climate change have motivated different studies with the aim to link heat stress and bovine reproduction problems. This is the case of the ongoing project in Ghent University entitled “Effects of sperm stressors on sperm methylation and subsequent embryo development in cattle”. 
-
-This bachelor's thesis can be found at can be found at http://hdl.handle.net/10256/16406.
+abstract: The cattle industry is constantly evolving due to an increasing demand for livestock products. The need to breed more cattle and the increase of the temperatures due to climate change have motivated different studies with the aim to link heat stress and bovine reproduction problems. This is the case of the ongoing project in Ghent University entitled “Effects of sperm stressors on sperm methylation and subsequent embryo development in cattle”. My role in this project was: (I) to test and optimize primers for embryo transcript expression analysis and (II) to design, test and optimize primers for bisulfite treated embryos. This bachelor's thesis can be found at can be found at http://hdl.handle.net/10256/16406.
 
 # Summary. An optional shortened abstract.
 summary: "      "
