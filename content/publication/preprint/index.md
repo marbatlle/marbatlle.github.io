@@ -18,7 +18,7 @@ publication_types: ["3"]
 publication: ""
 publication_short: ""
 
-abstract: The cattle industry is constantly evolving due to an increasing demand for livestock products. The need to breed more cattle and the increase of the temperatures due to climate change have motivated different studies with the aim to link heat stress and bovine reproduction problems. This is the case of the ongoing project in Ghent University entitled “Effects of sperm stressors on sperm methylation and subsequent embryo development in cattle”.
+abstract: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.
 
 # Summary. An optional shortened abstract.
 summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
@@ -29,8 +29,8 @@ featured: false
 
 links:
 - name: Custom Link
-  url: https://dugi-doc.udg.edu/handle/10256/16406
-url_pdf: https://dugi-doc.udg.edu/bitstream/handle/10256/16406/batlleperez.mar.pdf?sequence=1&isAllowed=y
+  url: http://example.org
+url_pdf: http://arxiv.org/pdf/1512.04133v1
 url_code: '#'
 url_dataset: '#'
 url_poster: '#'
@@ -42,7 +42,7 @@ url_video: '#'
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 
 image:
-  caption: """"
+  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/s9CC2SKySJM)'
   focal_point: ""
   preview_only: false
 
