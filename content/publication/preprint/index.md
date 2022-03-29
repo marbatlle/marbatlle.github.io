@@ -1,6 +1,5 @@
 ---
 title: "Design and optimization of primers for gene transcript and methylation analysis on bovine embryos"
-url: http://example.org
 authors:
 - admin
 date: "2019-04-07T00:00:00Z"
@@ -28,8 +27,8 @@ tags:
 featured: false
 
 links:
-- name: Custom Link
-  url: http://example.org
+- name: ''
+  url: ''
 url_pdf: ''
 url_code: ''
 url_dataset: ''
