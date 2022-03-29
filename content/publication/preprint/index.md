@@ -27,8 +27,8 @@ tags:
 featured: false
 
 links:
-- name: Custom
-  url: http://example.org
+- name: 
+  url: ''
 url_pdf: ''
 url_code: ''
 url_dataset: ''
