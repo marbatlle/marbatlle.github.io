@@ -20,7 +20,8 @@ role: Bioinformatics and Biotech
 # Short bio (displayed in user profile at end of posts)
 bio: Biotechnologist with a great interest in learning how to apply Bioinformatics to Precision Medicine
 
-research interests:
+# Interests to show in About widget
+interests:
 - Genomics Data Science
 - Data Visualization
 - Innovative Teaching Methods in Science
@@ -76,6 +77,6 @@ user_groups:
 
 I’m Mar Batlle. I’m a Bioinformatics Research Intern at Barcelona Supercomputing Center, focusing on applying multilayer networks techniques to the study of rare diseases affecting children.
 
-I attended the Universitat de Girona and the National School of Health (ISCIII), where I earned my BSc in Biotechnology and MSc in Bioinformatics Applied to Precision Medicine and Health.
+I attended the Universitat de Girona and the National School of Health (ISCIII), where I earned my BSc in Biotechnology and MSc in Bioinformatics Applied to Precision Medicine and Health, respectively.
 
 {{< icon name="download" pack="fas" >}} Download my {{< staticref "media/resume.pdf" "newtab" >}}resume{{< /staticref >}}
