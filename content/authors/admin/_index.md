@@ -74,10 +74,6 @@ user_groups:
 ---
 # Hi there.
 
-I'm Mar Batlle. I'm a Bioinformatics Research Intern at Barcelona Supercomputing Center, focusing on applying multilayer networks techniques to the study of rare diseases affecting children.
-
-I attended Universitat de Girona where I earned my BSc in Biotechnology. During school, I ended up working as the program director and hiring manager at a summer camp in the picturesque area of Algonquin Park, in Ontario, Canada. 
-
-The COVID-19 pandemic turned my plans upside down, and gave me the time to change my focus and break into a new and exciting career path, bioinformatics. I started grad school at the National School of Health, ISCIII and graduated with a Master's of Bioinformatics Applied to Precision Medicine and Health.
+I'm Mar Batlle. I attended the Universitat de Girona and the National School of Health (ISCIII), where I earned my BSc in Biotechnology and MSc in Bioinformatics Applied to Precision Medicine and Health. At the moment, I'm a Bioinformatics Research Intern at the Barcelona Supercomputing Center, focusing on applying multilayer networks techniques to the study of rare diseases affecting children.
 
 {{< icon name="download" pack="fas" >}} Download my {{< staticref "media/resume.pdf" "newtab" >}}resume{{< /staticref >}}
