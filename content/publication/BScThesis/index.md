@@ -2,7 +2,7 @@
 title: "Design and optimization of primers for gene transcript and methylation analysis on bovine embryos"
 authors:
 - admin
-date: "2019-04-07T00:00:00Z"
+date: "2018-06-01T00:00:00Z"
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
