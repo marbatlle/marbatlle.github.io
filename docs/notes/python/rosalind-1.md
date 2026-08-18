@@ -27,4 +27,4 @@ Mission statement: We hope that Rosalind will inspire a new generation of bioinf
 
 ### My Repository
 
-https://github.com/marbatlle/Rosalind_Project
+https://github.com/marbatlle/Python-Challenges

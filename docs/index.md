@@ -153,7 +153,7 @@ Earlier research and applied work. The full list lives on the
 
     Sample pipeline for variant analysis of whole-exome sequencing data.
 
-    [:octicons-mark-github-16: View on GitHub](https://github.com/marbatlle/Omics_SamplePipes/tree/main/SNVs%20Analysis%20Pipe)
+    [:octicons-mark-github-16: View on GitHub](https://github.com/marbatlle/Omics-Snippets/tree/main/SNVs%20Analysis%20Pipe)
 
 -   :material-notebook-outline:{ .lg .middle } **Notes**
 
