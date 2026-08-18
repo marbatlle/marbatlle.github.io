@@ -114,6 +114,31 @@
   }
 }
 
+/* ----- Two-column section (Education / Certifications) --------- */
+
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 2.5rem;
+  align-items: start;
+}
+
+.md-typeset .two-col h3 {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--md-default-fg-color--light);
+  margin: 0 0 0.6rem;
+}
+
+@media screen and (max-width: 44em) {
+  .two-col {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
 /* ----- Interests ------------------------------------------------ */
 
 .interests {

@@ -30,17 +30,22 @@ hide:
 
 <div class="hero-text" markdown>
 
-## Hi there.
 
-I work on health data interoperability and clinical data linkage, usually
-somewhere between the clinical people and the technical people. Right now I
-coordinate perinatal data extraction across 57 Victorian hospital sites at
-Murdoch Children's Research Institute, and I am building a perinatal data
-dictionary aligned to SNOMED CT and mapped to the OMOP Common Data Model.
+## Hi there
 
-Before Melbourne I spent close to four years at Genomics England, embedded in
-the NHS Genomic Medicine Service, mapping healthcare and genomic data models to
-HL7 FHIR for national genomic diagnostics.
+I work in health data, across bioinformatics, clinical data standards and
+large-scale linkage.
+
+Right now I'm at MCRI in Melbourne, managing perinatal data linkage and
+extraction across Victorian hospitals for GenV, Australia's largest
+longitudinal study of children and families.
+
+Before that, nearly four years at Genomics England, embedded in the NHS
+Genomic Medicine Service. I was the SME on the interpretation platform,
+sitting between product, engineering and clinical users. I wrote the test
+scenarios and documentation that went with it, mapped healthcare and genomic
+data models to HL7 FHIR, and used Python and SQL to dig into large clinical
+and genomic datasets.
 
 <p class="hero-cta" markdown>
 :material-download: Download my [CV](files/cv.pdf)
@@ -87,9 +92,10 @@ Mar 2026 – Present<br>
 <div class="entry-main" markdown>
 **Clinical Bioinformatician**<br>
 <span class="entry-org">Genomics England</span>
-<span class="entry-desc">Mapped healthcare and genomic data models to HL7 FHIR with NHS stakeholders,
-acted as SME for the in-house interpretation platform, and led external-facing
-user guides and documentation standards.</span>
+<span class="entry-desc">SME for the in-house interpretation platform serving the NHS Genomic Medicine
+Service, working between product, engineering and clinical users. Data
+modelling to HL7 FHIR, documentation standards, and analysis in Python and
+SQL.</span>
 </div>
 <div class="entry-meta" markdown>
 Apr 2022 – Jan 2026<br>
@@ -109,6 +115,99 @@ and cancer research, including the EU-funded individualized Pediatric Cure
 May 2021 – Apr 2022<br>
 <span class="entry-loc">Spain</span>
 </div>
+</div>
+
+---
+
+## Education & Certifications
+
+<div class="two-col" markdown>
+
+<div markdown>
+
+### Education
+
+<div class="entry" markdown>
+<div class="entry-main" markdown>
+**MSc Bioinformatics Applied to Precision Medicine and Health**<br>
+<span class="entry-org">Escuela Nacional de Sanidad, Instituto de Salud Carlos III</span>
+</div>
+<div class="entry-meta" markdown>
+Sep 2020 – Oct 2021<br>
+<span class="entry-loc">Spain</span>
+</div>
+</div>
+
+<div class="entry" markdown>
+<div class="entry-main" markdown>
+**MSEd Science Teaching in Secondary Education**<br>
+<span class="entry-org">Universitat Pompeu Fabra</span>
+</div>
+<div class="entry-meta" markdown>
+Sep 2018 – Jun 2019<br>
+<span class="entry-loc">Spain</span>
+</div>
+</div>
+
+<div class="entry" markdown>
+<div class="entry-main" markdown>
+**BSc Biotechnology**<br>
+<span class="entry-org">Universitat de Girona</span>
+</div>
+<div class="entry-meta" markdown>
+Sep 2014 – Jun 2018<br>
+<span class="entry-loc">Spain</span>
+</div>
+</div>
+
+</div>
+
+<div markdown>
+
+### Certifications
+
+<div class="entry" markdown>
+<div class="entry-main" markdown>
+**FHIR Implementer: Foundational**<br>
+<span class="entry-org">Health Level Seven International (HL7)</span>
+</div>
+<div class="entry-meta" markdown>
+May 2025
+</div>
+</div>
+
+<div class="entry" markdown>
+<div class="entry-main" markdown>
+**SNOMED CT Foundation**<br>
+<span class="entry-org">SNOMED International</span>
+</div>
+<div class="entry-meta" markdown>
+Jun 2026
+</div>
+</div>
+
+<div class="entry" markdown>
+<div class="entry-main" markdown>
+**Certified Cloud Practitioner**<br>
+<span class="entry-org">Amazon Web Services (AWS)</span>
+</div>
+<div class="entry-meta" markdown>
+Mar 2024
+</div>
+</div>
+
+<div class="entry" markdown>
+<div class="entry-main" markdown>
+**C2 Proficient in English**<br>
+<span class="entry-org">IELTS for UKVI Academic</span>
+</div>
+<div class="entry-meta" markdown>
+Mar 2022
+</div>
+</div>
+
+</div>
+
 </div>
 
 ---
@@ -146,50 +245,3 @@ May 2021 – Apr 2022<br>
 Pipelines, data science work and study notes live on the
 [Projects](projects.md) page.
 </p>
-
----
-
-## Education
-
-<div class="entry" markdown>
-<div class="entry-main" markdown>
-**MSc in Bioinformatics Applied to Precision Medicine and Health**<br>
-<span class="entry-org">Escuela Nacional de Sanidad, Instituto de Salud Carlos III</span>
-</div>
-<div class="entry-meta" markdown>
-2021<br>
-<span class="entry-loc">Spain</span>
-</div>
-</div>
-
-<div class="entry" markdown>
-<div class="entry-main" markdown>
-**MSEd in Science Teaching**<br>
-<span class="entry-org">Universitat Pompeu Fabra</span>
-</div>
-<div class="entry-meta" markdown>
-2019<br>
-<span class="entry-loc">Spain</span>
-</div>
-</div>
-
-<div class="entry" markdown>
-<div class="entry-main" markdown>
-**BSc in Biotechnology**<br>
-<span class="entry-org">Universitat de Girona</span>
-</div>
-<div class="entry-meta" markdown>
-2018<br>
-<span class="entry-loc">Spain</span>
-</div>
-</div>
-
-### Certifications
-
-<div class="certs" markdown>
-
-- **HL7 FHIR Implementer Foundational** <span class="cert-issuer">HL7 International, 2025</span>
-- **SNOMED CT Foundation** <span class="cert-issuer">SNOMED International, 2026</span>
-- **AWS Certified Cloud Practitioner** <span class="cert-issuer">Amazon Web Services, 2024</span>
-
-</div>
