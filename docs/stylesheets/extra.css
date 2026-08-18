@@ -1,0 +1,32 @@
+.hero {
+  text-align: center;
+  padding: 1.5rem 0 0.5rem;
+}
+
+.hero img.avatar {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.25);
+  margin-bottom: 1rem;
+}
+
+.hero h1 {
+  margin-bottom: 0.2rem;
+}
+
+.hero .subtitle {
+  font-size: 1.15rem;
+  color: var(--md-default-fg-color--light);
+  margin-bottom: 1rem;
+}
+
+.hero .contact-line {
+  margin-bottom: 0.5rem;
+  color: var(--md-default-fg-color--light);
+}
+
+.hero .contact-line a {
+  color: var(--md-default-fg-color--light);
+}

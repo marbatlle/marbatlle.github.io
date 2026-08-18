@@ -1,15 +1,19 @@
+<div class="hero" markdown>
+
+![Mar Batlle](images/avatar.jpg){ .avatar }
+
 # Mar Batlle
 
-**Clinical Data Linkage Manager | FHIR & Clinical Informatics Specialist**
+<p class="subtitle">Clinical Data Linkage Manager | FHIR &amp; Clinical Informatics Specialist</p>
 
+<p class="contact-line" markdown>
 :material-map-marker: Melbourne, VIC &nbsp;·&nbsp;
 :material-email: [marbatlleperez@gmail.com](mailto:marbatlleperez@gmail.com) &nbsp;·&nbsp;
-[LinkedIn](https://www.linkedin.com/in/marbatlle/) &nbsp;·&nbsp;
-[GitHub](https://github.com/marbatlle)
+:fontawesome-brands-linkedin: [LinkedIn](https://www.linkedin.com/in/marbatlle/) &nbsp;·&nbsp;
+:fontawesome-brands-github: [GitHub](https://github.com/marbatlle)
+</p>
 
-<!-- Once you have a CV PDF, drop it at docs/files/cv.pdf and uncomment:
-[Download CV](files/cv.pdf){ .md-button .md-button--primary }
--->
+</div>
 
 ## Profile
 
@@ -21,6 +25,38 @@ Medicine Service as a Clinical Bioinformatician, architecting FHIR resource
 models validated by NHS FHIR leadership. Native Spanish speaker with strong
 technical writing and cross-team coordination skills.
 
-See [Experience](experience.md) for role details, [Education &
-Certifications](education.md) for qualifications, [Skills](skills.md) for the
-technical toolkit, and [Background](background.md) for earlier research work.
+<div class="grid cards" markdown>
+
+-   :material-briefcase:{ .lg .middle } **Experience**
+
+    ---
+
+    GenV, Genomics England, and Barcelona Supercomputing Center.
+
+    [:octicons-arrow-right-24: View roles](experience.md)
+
+-   :material-school:{ .lg .middle } **Education & Certifications**
+
+    ---
+
+    Degrees, HL7 FHIR, SNOMED CT, and AWS certifications.
+
+    [:octicons-arrow-right-24: View qualifications](education.md)
+
+-   :material-tools:{ .lg .middle } **Skills**
+
+    ---
+
+    FHIR/HL7, AWS, Python, SQL, and data linkage methodology.
+
+    [:octicons-arrow-right-24: View skills](skills.md)
+
+-   :material-flask:{ .lg .middle } **Background**
+
+    ---
+
+    Earlier research: multilayer networks and bovine embryo genetics.
+
+    [:octicons-arrow-right-24: View background](background.md)
+
+</div>
