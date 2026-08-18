@@ -168,7 +168,7 @@ Sep 2014 – Jun 2018<br>
 
 <div class="entry" markdown>
 <div class="entry-main" markdown>
-**FHIR Implementer: Foundational**<br>
+**[FHIR Implementer: Foundational :octicons-link-external-16:](https://hl7-international.verified.cv/en/verify/60107187861546){ target="_blank" }**<br>
 <span class="entry-org">Health Level Seven International (HL7)</span>
 </div>
 <div class="entry-meta" markdown>
@@ -178,7 +178,7 @@ May 2025
 
 <div class="entry" markdown>
 <div class="entry-main" markdown>
-**SNOMED CT Foundation**<br>
+**[SNOMED CT Foundation :octicons-link-external-16:](https://drive.google.com/file/d/1Qr6ynthKW7qumdloCEKmTs4h2y1kWj4O/view?usp=sharing){ target="_blank" }**<br>
 <span class="entry-org">SNOMED International</span>
 </div>
 <div class="entry-meta" markdown>
@@ -188,7 +188,7 @@ Jun 2026
 
 <div class="entry" markdown>
 <div class="entry-main" markdown>
-**Certified Cloud Practitioner**<br>
+**[Certified Cloud Practitioner :octicons-link-external-16:](https://www.credly.com/badges/48dd865e-3714-4318-ad34-0d5a48ba98d8/public_url){ target="_blank" }**<br>
 <span class="entry-org">Amazon Web Services (AWS)</span>
 </div>
 <div class="entry-meta" markdown>
