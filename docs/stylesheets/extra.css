@@ -6,6 +6,19 @@
   --mb-rail: var(--md-primary-fg-color);
 }
 
+/* ----- Custom primary: dark grey header, both modes ------------
+   Matches Material's own slate default background (hsl(225,15%,14%))
+   exactly, so in dark mode the header blends into the page, and in
+   light mode it sits as a dark bar over the white body. -----------*/
+
+[data-md-color-primary="custom"] {
+  --md-primary-fg-color: hsl(225, 15%, 14%);
+  --md-primary-fg-color--light: hsl(225, 15%, 24%);
+  --md-primary-fg-color--dark: hsl(225, 15%, 14%);
+  --md-primary-bg-color: hsl(225, 15%, 100%);
+  --md-primary-bg-color--light: hsla(225, 15%, 100%, 0.7);
+}
+
 /* ----- Hero ---------------------------------------------------- */
 
 .hero-grid {
