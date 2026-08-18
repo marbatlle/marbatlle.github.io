@@ -1,6 +1,4 @@
-# IDEs
-.idea/
-
-# Hugo
-/resources/
-public/
+site/
+__pycache__/
+*.pyc
+.venv/

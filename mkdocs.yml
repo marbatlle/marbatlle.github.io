@@ -1,0 +1,63 @@
+site_name: Mar Batlle
+site_url: https://marbatlle.github.io/
+site_description: >-
+  Clinical Data Linkage Manager | FHIR & Clinical Informatics Specialist.
+  Portfolio and CV.
+site_author: Mar Batlle
+
+docs_dir: docs
+
+nav:
+  - Home: index.md
+  - Experience: experience.md
+  - Education & Certifications: education.md
+  - Skills: skills.md
+  - Background: background.md
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  font:
+    text: Inter
+  icon:
+    repo: fontawesome/brands/github
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.top
+    - content.code.copy
+    - toc.follow
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - tables
+  - def_list
+
+extra:
+  social:
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/marbatlle/
+      name: LinkedIn
+    - icon: fontawesome/brands/github
+      link: https://github.com/marbatlle
+      name: GitHub
+
+copyright: Copyright &copy; Mar Batlle
