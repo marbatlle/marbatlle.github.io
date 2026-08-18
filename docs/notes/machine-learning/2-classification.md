@@ -1,0 +1,109 @@
+---
+title: Classification Algorithms
+---
+
+# Classification Algorithms
+
+In machine learning, classification refers to a predictive modeling problem where a class label is predicted for a given example of input data.
+
+## 1. Prepare the Data for Machine Learning Algorithms
+Use of Transformation Pipelines including:
+* Data Cleaning
+* Handling Text and Categorical Attributes
+* Feature Scaling
+
+## 2. Training a Model
+
+### Binary Classification
+Binary classification refers to those classification tasks that have two class labels.
+
+Examples include:
+
+* Email spam detection (spam or not).
+* Churn prediction (churn or not).
+* Conversion prediction (buy or not).
+
+#### Logistic Regression
+
+#### k-Nearest Neighbors
+
+#### Decision Trees
+
+#### Support Vector Machine
+
+#### Stochastic Gradient Descent (SGD)
+
+#### Naive Bayes
+
+### Multi-Class Classification
+
+Multi-class classification refers to those classification tasks that have more than two class labels.
+
+Examples include:
+
+* Face classification.
+* Plant species classification.
+* Optical character recognition.
+
+
+#### k-Nearest Neighbors
+
+#### Decision Trees
+
+#### Gradient Boosting
+
+#### Naive Bayes
+
+#### Random Forests
+
+Algorithms that are designed for binary classification can be adapted for use for multi-class problems.
+
+This involves using a strategy of fitting multiple binary classification models for each class vs. all other classes (called one-vs-rest) or one model for each pair of classes (called one-vs-one).
+
+* **One-vs-Rest:** Fit one binary classification model for each class vs. all other classes.
+* **One-vs-One:** Fit one binary classification model for each pair of classes.
+
+Binary classification algorithms that can use these strategies for multi-class classification include:
+
+#### Logistic Regression
+
+#### Support Vector Machine
+
+
+### Multi-Label Classification
+Multi-label classification refers to those classification tasks that have two or more class labels, where one or more class labels may be predicted for each example.
+
+Consider the example of photo classification, where a given photo may have multiple objects in the scene and a model may predict the presence of multiple known objects in the photo, such as “bicycle,” “apple,” “person,” etc.
+
+Classification algorithms used for binary or multi-class classification cannot be used directly for multi-label classification. Specialized versions of standard classification algorithms can be used, so-called multi-label versions of the algorithms, including:
+
+#### Multi-label Decision Trees
+#### Multi-label Random Forests
+#### Multi-label Gradient Boosting
+
+
+### Imbalanced Classification
+Imbalanced classification refers to classification tasks where the number of examples in each class is unequally distributed.
+
+Typically, imbalanced classification tasks are binary classification tasks where the majority of examples in the training dataset belong to the normal class and a minority of examples belong to the abnormal class.
+
+Examples include:
+
+* Fraud detection.
+* Outlier detection.
+* Medical diagnostic tests.
+
+
+## 3. Evaluating a Model
+
+### Accuracy
+
+### Precision
+
+### Recall
+
+### f1
+
+### Confusion Matrix
+
+### Mean average precision (object detection)

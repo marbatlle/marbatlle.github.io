@@ -1,21 +1,31 @@
 # marbatlle.github.io
 
-Source for [marbatlle.github.io](https://marbatlle.github.io/), built with
-[MkDocs](https://www.mkdocs.org/) and the
-[Material](https://squidfunk.github.io/mkdocs-material/) theme, deployed to
-GitHub Pages via [.github/workflows/deploy.yml](.github/workflows/deploy.yml)
-on every push to `master`.
+Personal site built with [MkDocs](https://www.mkdocs.org/) and
+[Material for MkDocs](https://squidfunk.github.io/mkdocs-material/).
 
-## Local development
+## Structure
+
+```
+docs/
+  index.md              Home: profile, experience, education, certifications, projects
+  projects.md           Projects tab
+  notes/                Notes tab (one folder per topic)
+  images/               Avatar and note figures
+  files/                PDFs (theses)
+  stylesheets/extra.css Custom styling
+mkdocs.yml              Site config and navigation
+```
+
+## Local preview
 
 ```bash
 pip install -r requirements.txt
 mkdocs serve
 ```
 
-Then open http://127.0.0.1:8000/.
+Then open http://127.0.0.1:8000.
 
-## Structure
+## Deploy
 
-- `mkdocs.yml` — site config, nav, theme
-- `docs/` — page content (Markdown)
+Pushing to `master` triggers `.github/workflows/deploy.yml`, which builds the
+site and publishes it to GitHub Pages.

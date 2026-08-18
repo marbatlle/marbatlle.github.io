@@ -1,32 +1,161 @@
+/* ---------------------------------------------------------------
+   Mar Batlle - portfolio styles
+   --------------------------------------------------------------- */
+
+:root {
+  --mb-rail: var(--md-primary-fg-color);
+}
+
+/* ----- Hero ---------------------------------------------------- */
+
 .hero {
   text-align: center;
   padding: 1.5rem 0 0.5rem;
 }
 
 .hero img.avatar {
-  width: 160px;
-  height: 160px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   object-fit: cover;
-  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.22);
   margin-bottom: 1rem;
 }
 
 .hero h1 {
   margin-bottom: 0.2rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
 }
 
 .hero .subtitle {
-  font-size: 1.15rem;
+  font-size: 1.1rem;
   color: var(--md-default-fg-color--light);
-  margin-bottom: 1rem;
+  margin-bottom: 0.9rem;
 }
 
 .hero .contact-line {
   margin-bottom: 0.5rem;
+  font-size: 0.78rem;
   color: var(--md-default-fg-color--light);
 }
 
 .hero .contact-line a {
   color: var(--md-default-fg-color--light);
+}
+
+.hero .contact-line a:hover {
+  color: var(--md-accent-fg-color);
+}
+
+/* ----- Intro paragraph ----------------------------------------- */
+
+.intro {
+  max-width: 44rem;
+  margin: 0 auto 1.5rem;
+  text-align: center;
+  color: var(--md-default-fg-color--light);
+}
+
+/* ----- CV entries (experience / education) --------------------- */
+
+.entry {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1.5rem;
+  padding: 0.7rem 0 0.7rem 1rem;
+  border-left: 2px solid var(--md-default-fg-color--lightest);
+  transition: border-color 160ms;
+}
+
+.entry:hover {
+  border-left-color: var(--mb-rail);
+}
+
+.entry .entry-main {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.entry .entry-main p,
+.entry .entry-meta p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.entry .entry-org {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--md-default-fg-color--light);
+}
+
+.entry .entry-meta {
+  flex: 0 0 auto;
+  text-align: right;
+  font-size: 0.75rem;
+  color: var(--md-default-fg-color--light);
+  white-space: nowrap;
+}
+
+.entry .entry-loc {
+  display: block;
+  opacity: 0.75;
+}
+
+@media screen and (max-width: 44em) {
+  .entry {
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+  .entry .entry-meta {
+    text-align: left;
+  }
+  .entry .entry-loc {
+    display: inline;
+  }
+  .entry .entry-loc::before {
+    content: " · ";
+  }
+}
+
+/* ----- Certifications ------------------------------------------ */
+
+.certs ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.certs li {
+  padding: 0.35rem 0 0.35rem 1rem;
+  border-left: 2px solid var(--md-default-fg-color--lightest);
+}
+
+.certs .cert-issuer {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--md-default-fg-color--light);
+}
+
+/* ----- Cards --------------------------------------------------- */
+
+.md-typeset .grid.cards > ul > li {
+  border-radius: 0.3rem;
+  transition: border-color 160ms, box-shadow 160ms;
+}
+
+.md-typeset .grid.cards > ul > li:hover {
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
+}
+
+/* ----- Home page rhythm ---------------------------------------- */
+
+.md-typeset hr {
+  margin: 2rem 0 1.5rem;
+}
+
+.md-typeset h2 {
+  font-weight: 600;
+  letter-spacing: -0.01em;
 }

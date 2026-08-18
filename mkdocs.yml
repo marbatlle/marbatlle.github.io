@@ -1,18 +1,63 @@
 site_name: Mar Batlle
 site_url: https://marbatlle.github.io/
 site_description: >-
-  Clinical Data Linkage Manager | FHIR & Clinical Informatics Specialist.
-  Portfolio and CV.
+  Mar Batlle - Clinical Data Linkage Manager, FHIR and clinical informatics.
+  Experience, education, projects and notes.
 site_author: Mar Batlle
 
 docs_dir: docs
 
 nav:
   - Home: index.md
-  - Experience: experience.md
-  - Education & Certifications: education.md
-  - Skills: skills.md
-  - Background: background.md
+  - Projects: projects.md
+  - Notes:
+      - notes/index.md
+      - Command Line:
+          - notes/command-line/index.md
+          - "1. Intro to Linux": notes/command-line/tema-1.md
+          - "2. Basic Management": notes/command-line/tema-2.md
+          - "3. Process Management": notes/command-line/tema-3.md
+          - "4. File System": notes/command-line/tema-4.md
+          - "5. Advanced Commands": notes/command-line/tema-5.md
+          - "6. User Configuration": notes/command-line/tema-6.md
+          - "7. Advanced Linux": notes/command-line/tema-7.md
+          - "9. UNIX Projects": notes/command-line/evaluation.md
+      - Bioinformatic Tools:
+          - notes/bioinformatic-tools/index.md
+          - "Git Repository": notes/bioinformatic-tools/git.md
+          - "Docker": notes/bioinformatic-tools/docking.md
+      - R for Biostatistics:
+          - notes/r-for-biostatistics/index.md
+          - "Single Variable Analysis": notes/r-for-biostatistics/1-descriptive-statistics.md
+          - "Two Categorical Variables": notes/r-for-biostatistics/2-contingency-tables.md
+          - "Continuous and Categorical with 2 groups": notes/r-for-biostatistics/3-1continuous-1cat2groups.md
+      - SQL:
+          - notes/sql/index.md
+          - "1. Manipulation": notes/sql/tema-1.md
+          - "2. Queries": notes/sql/tema-2.md
+          - "3. Aggregate Functions": notes/sql/tema-3.md
+          - "4. Multiple Tables": notes/sql/tema-4.md
+      - Python:
+          - notes/python/index.md
+          - "Color Palettes": notes/python/color-palettes.md
+          - "Exercices from www.practicepython.org": notes/python/phyton-practicepython.md
+          - "Basic Concepts Project": notes/python/pythonproject.md
+          - "Rosalind Project": notes/python/rosalind-1.md
+      - Machine Learning:
+          - notes/machine-learning/index.md
+          - "Data Preparation": notes/machine-learning/0-preparation.md
+          - "Regression Algorithms": notes/machine-learning/1-regression.md
+          - "Classification Algorithms": notes/machine-learning/2-classification.md
+      - Deep Learning for Coders:
+          - notes/deep-learning/index.md
+      - MongoDB:
+          - notes/mongodb/index.md
+          - "1. What is MongoDB": notes/mongodb/chapter-1.md
+          - "2. Importing, Exporting, and Querying Data": notes/mongodb/chapter-2.md
+          - "3. Creating and Manipulating Documents": notes/mongodb/chapter-3.md
+          - "4. Advanced CRUD Operations": notes/mongodb/chapter-4.md
+          - "5. Indexing and Aggregation Pipeline": notes/mongodb/chapter-5.md
+          - "6. Next Steps": notes/mongodb/chapter-6.md
 
 theme:
   name: material
@@ -33,28 +78,42 @@ theme:
         name: Switch to light mode
   font:
     text: Inter
+    code: JetBrains Mono
   icon:
     repo: fontawesome/brands/github
   features:
     - navigation.instant
     - navigation.tracking
-    - navigation.top
     - navigation.tabs
     - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
     - content.code.copy
     - toc.follow
+    - search.suggest
+    - search.highlight
 
 extra_css:
   - stylesheets/extra.css
+
+plugins:
+  - search
 
 markdown_extensions:
   - attr_list
   - md_in_html
   - admonition
+  - footnotes
   - pymdownx.details
   - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
   - tables
   - def_list
+  - toc:
+      permalink: true
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
