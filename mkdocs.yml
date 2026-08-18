@@ -1,8 +1,8 @@
 site_name: Mar Batlle
 site_url: https://marbatlle.github.io/
 site_description: >-
-  Mar Batlle - Clinical Data Linkage Manager, FHIR and clinical informatics.
-  Experience, education, projects and notes.
+  Mar Batlle - health data interoperability and clinical data linkage.
+  HL7 FHIR, SNOMED CT, OMOP. Experience, education, projects and notes.
 site_author: Mar Batlle
 
 docs_dir: docs

@@ -8,53 +8,139 @@
 
 /* ----- Hero ---------------------------------------------------- */
 
-.hero {
-  text-align: center;
+.hero-grid {
+  display: grid;
+  grid-template-columns: 210px minmax(0, 1fr);
+  gap: 2.5rem;
+  align-items: start;
   padding: 1.5rem 0 0.5rem;
 }
 
-.hero img.avatar {
-  width: 150px;
-  height: 150px;
+.hero-side {
+  text-align: center;
+}
+
+.md-typeset .hero-grid .headerlink {
+  display: none;
+}
+
+.hero-side img.avatar {
+  width: 160px;
+  height: 160px;
   border-radius: 50%;
   object-fit: cover;
   box-shadow: 0 4px 18px rgba(0, 0, 0, 0.22);
-  margin-bottom: 1rem;
+  margin-bottom: 0.9rem;
 }
 
-.hero h1 {
-  margin-bottom: 0.2rem;
+.md-typeset .hero-side p {
+  margin: 0;
+}
+
+.md-typeset .hero-side h1 {
+  margin: 0;
+  font-size: 1.45rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  color: var(--md-default-fg-color);
+}
+
+.hero-side .hero-social {
+  margin-top: 0.8rem !important;
+  font-size: 1.15rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.85rem;
+}
+
+.hero-side .hero-social a {
+  color: var(--md-default-fg-color--light);
+  transition: color 160ms;
+}
+
+.hero-side .hero-social a:hover {
+  color: var(--md-accent-fg-color);
+}
+
+.hero-side .hero-loc {
+  margin-top: 0.7rem !important;
+  font-size: 0.72rem;
+  color: var(--md-default-fg-color--light);
+}
+
+.md-typeset .hero-main h2 {
+  margin: 0 0 0.6rem;
+  padding: 0;
+  border: 0;
+  font-size: 1.75rem;
   font-weight: 700;
   letter-spacing: -0.02em;
 }
 
-.hero .subtitle {
-  font-size: 1.1rem;
-  color: var(--md-default-fg-color--light);
-  margin-bottom: 0.9rem;
-}
-
-.hero .contact-line {
-  margin-bottom: 0.5rem;
-  font-size: 0.78rem;
+.hero-main p {
   color: var(--md-default-fg-color--light);
 }
 
-.hero .contact-line a {
-  color: var(--md-default-fg-color--light);
+.md-typeset .hero-main .hero-cta {
+  margin-top: 1.1rem;
+  font-size: 0.85rem;
 }
 
-.hero .contact-line a:hover {
-  color: var(--md-accent-fg-color);
+@media screen and (max-width: 60em) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    text-align: center;
+  }
+  .md-typeset .hero-main h2 {
+    font-size: 1.5rem;
+  }
 }
 
-/* ----- Intro paragraph ----------------------------------------- */
+/* ----- Hero content: intro text + interests side column -------- */
 
-.intro {
-  max-width: 44rem;
-  margin: 0 auto 1.5rem;
-  text-align: center;
+.hero-content {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 14rem;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+@media screen and (max-width: 52em) {
+  .hero-content {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+/* ----- Interests ------------------------------------------------ */
+
+.interests {
+  margin: 0;
+}
+
+.md-typeset .interests h3 {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
   color: var(--md-default-fg-color--light);
+  margin: 0 0 0.6rem;
+}
+
+.md-typeset .interests ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.md-typeset .interests li {
+  margin: 0 0 0.15rem;
+  padding: 0.2rem 0 0.2rem 1rem;
+  font-size: 0.82rem;
+  line-height: 1.4;
+  border-left: 2px solid var(--md-default-fg-color--lightest);
 }
 
 /* ----- CV entries (experience / education) --------------------- */
@@ -88,6 +174,15 @@
   display: block;
   font-size: 0.8rem;
   color: var(--md-default-fg-color--light);
+}
+
+.entry .entry-desc {
+  display: block;
+  margin-top: 0.3rem;
+  font-size: 0.78rem;
+  line-height: 1.55;
+  color: var(--md-default-fg-color--light);
+  max-width: 42rem;
 }
 
 .entry .entry-meta {
@@ -147,6 +242,14 @@
 
 .md-typeset .grid.cards > ul > li:hover {
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
+}
+
+/* ----- Section footnote link ----------------------------------- */
+
+.md-typeset .section-more {
+  margin-top: 1rem;
+  font-size: 0.78rem;
+  color: var(--md-default-fg-color--light);
 }
 
 /* ----- Home page rhythm ---------------------------------------- */
