@@ -41,7 +41,6 @@ nav:
           - notes/python/index.md
           - "Color Palettes": notes/python/color-palettes.md
           - "Exercices from www.practicepython.org": notes/python/phyton-practicepython.md
-          - "Basic Concepts Project": notes/python/pythonproject.md
           - "Rosalind Project": notes/python/rosalind-1.md
       - Machine Learning:
           - notes/machine-learning/index.md

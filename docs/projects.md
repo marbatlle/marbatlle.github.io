@@ -86,12 +86,4 @@ Coursework and self-directed notebooks from the MSc period.
 
     [:octicons-link-external-24: View on Kaggle](https://www.kaggle.com/marbatlle/predict-with-regression-ridge-and-lasso/)
 
--   **Loan acceptance prediction**
-
-    ---
-
-    Binary classification task using scikit-learn.
-
-    [:octicons-mark-github-16: View on GitHub](https://github.com/marbatlle/Machine_Learning_Projects/blob/main/Loan%20Prediction%20-%20Binary%20Classification/LoanPrediction.ipynb)
-
 </div>
