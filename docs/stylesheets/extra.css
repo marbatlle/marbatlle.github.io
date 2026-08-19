@@ -185,8 +185,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
-  margin-top: 1.2rem;
+  gap: 1.4rem;
+  margin-top: 1.6rem;
 }
 
 .md-typeset .hero-buttons .md-button {
@@ -199,16 +199,16 @@
   font-weight: 600;
   letter-spacing: 0.02em;
   border-radius: 0.25rem;
-  background-color: var(--md-primary-fg-color);
-  border-color: var(--md-primary-fg-color);
-  color: var(--md-primary-bg-color);
+  background-color: var(--md-default-fg-color--light);
+  border-color: var(--md-default-fg-color--light);
+  color: var(--md-default-bg-color);
   transition: background-color 160ms, border-color 160ms;
 }
 
 .md-typeset .hero-buttons .md-button:hover {
-  background-color: var(--md-primary-fg-color--light);
-  border-color: var(--md-primary-fg-color--light);
-  color: var(--md-primary-bg-color);
+  background-color: var(--md-default-fg-color);
+  border-color: var(--md-default-fg-color);
+  color: var(--md-default-bg-color);
 }
 
 /* ----- CV entries (experience / education) --------------------- */
