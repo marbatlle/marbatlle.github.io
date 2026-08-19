@@ -12,6 +12,14 @@ nav:
   - Projects: projects.md
   - Notes:
       - notes/index.md
+      - FHIR:
+          - notes/fhir/index.md
+          - "1. FHIR Fundamentals": notes/fhir/tema-1.md
+          - "2. FHIR Resources": notes/fhir/tema-2.md
+          - "3. FHIR Data Types and Elements": notes/fhir/tema-3.md
+          - "4. FHIR Exchange": notes/fhir/tema-4.md
+          - "5. FHIR Implementation Guides": notes/fhir/tema-5.md
+          - "6. Security and Privacy in FHIR": notes/fhir/tema-6.md
       - Command Line:
           - notes/command-line/index.md
           - "1. Intro to Linux": notes/command-line/tema-1.md

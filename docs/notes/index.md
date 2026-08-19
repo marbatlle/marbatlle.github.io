@@ -6,6 +6,13 @@ so I do not have to look them up again.
 
 <div class="grid cards" markdown>
 
+-   :material-hospital-box-outline:{ .lg .middle } **[FHIR](fhir/index.md)**
+
+    ---
+
+    Study notes for the HL7 FHIR Implementer: Foundational exam - resources, data
+    types, exchange, implementation guides, security and privacy.
+
 -   :material-console:{ .lg .middle } **[Command Line](command-line/index.md)**
 
     ---
