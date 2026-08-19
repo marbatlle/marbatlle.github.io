@@ -26,7 +26,7 @@
   grid-template-columns: 210px minmax(0, 1fr);
   gap: 2.5rem;
   align-items: start;
-  padding: 1.5rem 0 0.5rem;
+  padding: 0.25rem 0 0;
 }
 
 .hero-side {
@@ -38,8 +38,8 @@
 }
 
 .hero-side img.avatar {
-  width: 160px;
-  height: 160px;
+  width: 132px;
+  height: 132px;
   border-radius: 50%;
   object-fit: cover;
   box-shadow: 0 4px 18px rgba(0, 0, 0, 0.22);
@@ -52,7 +52,7 @@
 
 .md-typeset .hero-side h1 {
   margin: 0;
-  font-size: 1.45rem;
+  font-size: 1.25rem;
   font-weight: 700;
   letter-spacing: -0.02em;
   line-height: 1.2;
@@ -83,21 +83,22 @@
 }
 
 .md-typeset .hero-main h2 {
-  margin: 0 0 0.6rem;
+  margin: 0 0 0.5rem;
   padding: 0;
   border: 0;
-  font-size: 1.75rem;
+  font-size: 1.6rem;
   font-weight: 700;
   letter-spacing: -0.02em;
 }
 
-.hero-main p {
-  color: var(--md-default-fg-color--light);
+.hero-main .hero-text p {
+  color: var(--md-default-fg-color);
+  margin-bottom: 0.6rem;
 }
 
-.md-typeset .hero-main .hero-cta {
-  margin-top: 1.1rem;
-  font-size: 0.85rem;
+.md-typeset .hero-side .hero-cta {
+  margin-top: 0.9rem !important;
+  font-size: 0.75rem;
 }
 
 @media screen and (max-width: 60em) {
@@ -137,8 +138,8 @@
 }
 
 .md-typeset .two-col h3 {
-  font-size: 0.72rem;
-  font-weight: 700;
+  font-size: 0.68rem;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: var(--md-default-fg-color--light);
@@ -159,8 +160,8 @@
 }
 
 .md-typeset .interests h3 {
-  font-size: 0.72rem;
-  font-weight: 700;
+  font-size: 0.68rem;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: var(--md-default-fg-color--light);
@@ -182,33 +183,88 @@
 }
 
 .hero-buttons {
+  margin-top: 1.25rem;
+}
+
+.md-typeset .hero-buttons p {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 1.4rem;
-  margin-top: 1.6rem;
+  gap: 0.4rem;
+  margin: 0;
 }
 
 .md-typeset .hero-buttons .md-button {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   width: 100%;
-  max-width: 11rem;
-  text-align: center;
-  padding: 0.5rem 1rem;
-  font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.02em;
-  border-radius: 0.25rem;
-  background-color: var(--md-default-fg-color--light);
-  border-color: var(--md-default-fg-color--light);
-  color: var(--md-default-bg-color);
-  transition: background-color 160ms, border-color 160ms;
+  margin: 0;
+  padding: 0.42rem 0.7rem;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.15rem;
+  background-color: transparent;
+  color: var(--md-default-fg-color--light);
+  transition: border-color 160ms, color 160ms, background-color 160ms;
+}
+
+.md-typeset .hero-buttons .md-button .twemoji {
+  height: 0.85rem;
+  opacity: 0.55;
+  transition: transform 160ms, opacity 160ms;
 }
 
 .md-typeset .hero-buttons .md-button:hover {
-  background-color: var(--md-default-fg-color);
-  border-color: var(--md-default-fg-color);
-  color: var(--md-default-bg-color);
+  background-color: transparent;
+  border-color: var(--md-default-fg-color--light);
+  color: var(--md-default-fg-color);
+}
+
+.md-typeset .hero-buttons .md-button:hover .twemoji {
+  opacity: 1;
+  transform: translateX(2px);
+}
+
+/* ----- Scroll cue ---------------------------------------------- */
+
+.md-typeset .scroll-cue {
+  margin: 1.75rem 0 0;
+  font-size: 0.72rem;
+}
+
+.md-typeset .scroll-cue a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--md-default-fg-color--light);
+  transition: color 160ms;
+}
+
+.md-typeset .scroll-cue a:hover {
+  color: var(--md-default-fg-color);
+}
+
+.md-typeset .scroll-cue .twemoji {
+  height: 0.8rem;
+  animation: mb-nudge 2.4s ease-in-out infinite;
+}
+
+.md-typeset .scroll-cue a:hover .twemoji {
+  animation: none;
+  transform: translateY(2px);
+}
+
+@keyframes mb-nudge {
+  0%, 60%, 100% { transform: translateY(0); }
+  75% { transform: translateY(3px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .md-typeset .scroll-cue .twemoji {
+    animation: none;
+  }
 }
 
 /* ----- CV entries (experience / education) --------------------- */
@@ -219,6 +275,7 @@
   align-items: baseline;
   gap: 1.5rem;
   padding: 0.7rem 0 0.7rem 1rem;
+  max-width: 54rem;
   border-left: 2px solid var(--md-default-fg-color--lightest);
   transition: border-color 160ms;
 }
@@ -250,7 +307,6 @@
   font-size: 0.78rem;
   line-height: 1.55;
   color: var(--md-default-fg-color--light);
-  max-width: 42rem;
 }
 
 .entry .entry-meta {
@@ -308,8 +364,26 @@
   transition: border-color 160ms, box-shadow 160ms;
 }
 
+.md-typeset .grid.cards .card-meta {
+  display: block;
+  margin-bottom: 0.6rem;
+  font-size: 0.65rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--md-default-fg-color--light);
+}
+
 .md-typeset .grid.cards > ul > li:hover {
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
+}
+
+/* ----- Page lede ----------------------------------------------- */
+
+.md-typeset .page-lede {
+  margin-top: -0.5rem;
+  font-size: 0.85rem;
+  color: var(--md-default-fg-color--light);
 }
 
 /* ----- Section footnote link ----------------------------------- */
@@ -323,7 +397,7 @@
 /* ----- Home page rhythm ---------------------------------------- */
 
 .md-typeset hr {
-  margin: 2rem 0 1.5rem;
+  margin: 1.5rem 0 1.25rem;
 }
 
 .md-typeset h2 {

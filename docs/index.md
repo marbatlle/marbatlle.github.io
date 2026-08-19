@@ -1,4 +1,5 @@
 ---
+title: Mar Batlle
 hide:
   - navigation
   - toc
@@ -22,6 +23,10 @@ hide:
 :material-map-marker: Melbourne, Australia
 </p>
 
+<p class="hero-cta" markdown>
+[:material-download: Download CV](files/cv.pdf)
+</p>
+
 </div>
 
 <div class="hero-main" markdown>
@@ -41,15 +46,8 @@ extraction across Victorian hospitals for GenV, Australia's largest
 longitudinal study of children and families.
 
 Before that, nearly four years at Genomics England, embedded in the NHS
-Genomic Medicine Service. I was the SME on the interpretation platform,
-sitting between product, engineering and clinical users. I wrote the test
-scenarios and documentation that went with it, mapped healthcare and genomic
-data models to HL7 FHIR, and used Python and SQL to dig into large clinical
-and genomic datasets.
-
-<p class="hero-cta" markdown>
-:material-download: Download my [CV](files/cv.pdf)
-</p>
+Genomic Medicine Service, as SME on the platform clinical scientists used to
+interpret genomic results.
 
 </div>
 
@@ -57,14 +55,14 @@ and genomic datasets.
 
 ### Interests
 
-- FHIR and health data standards
-- Personalised medicine and bioinformatics
+- Health data standards
+- Personalised medicine
 - Growing chillies
 - Exploring Australia
 
 <div class="hero-buttons" markdown>
-[Projects](projects.md){ .md-button }
-[Notes](notes/index.md){ .md-button }
+[Projects :octicons-arrow-right-16:](projects.md){ .md-button }
+[Notes :octicons-arrow-right-16:](notes/index.md){ .md-button }
 </div>
 
 </div>
@@ -72,6 +70,10 @@ and genomic datasets.
 </div>
 
 </div>
+
+<p class="scroll-cue" markdown>
+[Experience, education and certifications below :octicons-arrow-down-16:](#experience)
+</p>
 
 </div>
 
@@ -89,7 +91,7 @@ pipeline that cut a weeks-long process down to hours.</span>
 </div>
 <div class="entry-meta" markdown>
 Mar 2026 – Present<br>
-<span class="entry-loc">Australia</span>
+<span class="entry-loc">Melbourne, Australia</span>
 </div>
 </div>
 
@@ -104,7 +106,7 @@ SQL.</span>
 </div>
 <div class="entry-meta" markdown>
 Apr 2022 – Jan 2026<br>
-<span class="entry-loc">United Kingdom</span>
+<span class="entry-loc">London, United Kingdom</span>
 </div>
 </div>
 
@@ -118,7 +120,7 @@ and cancer research, including the EU-funded individualized Pediatric Cure
 </div>
 <div class="entry-meta" markdown>
 May 2021 – Apr 2022<br>
-<span class="entry-loc">Spain</span>
+<span class="entry-loc">Barcelona, Spain</span>
 </div>
 </div>
 
@@ -139,7 +141,7 @@ May 2021 – Apr 2022<br>
 </div>
 <div class="entry-meta" markdown>
 Sep 2020 – Oct 2021<br>
-<span class="entry-loc">Spain</span>
+<span class="entry-loc">Madrid, Spain</span>
 </div>
 </div>
 
@@ -150,7 +152,7 @@ Sep 2020 – Oct 2021<br>
 </div>
 <div class="entry-meta" markdown>
 Sep 2018 – Jun 2019<br>
-<span class="entry-loc">Spain</span>
+<span class="entry-loc">Barcelona, Spain</span>
 </div>
 </div>
 
@@ -161,7 +163,7 @@ Sep 2018 – Jun 2019<br>
 </div>
 <div class="entry-meta" markdown>
 Sep 2014 – Jun 2018<br>
-<span class="entry-loc">Spain</span>
+<span class="entry-loc">Girona, Spain</span>
 </div>
 </div>
 
