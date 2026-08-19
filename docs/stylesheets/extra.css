@@ -183,15 +183,32 @@
 
 .hero-buttons {
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.6rem;
-  margin-top: 1rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.55rem;
+  margin-top: 1.2rem;
 }
 
 .md-typeset .hero-buttons .md-button {
-  padding: 0.3rem 0.9rem;
-  font-size: 0.72rem;
-  border-radius: 0.2rem;
+  display: block;
+  width: 100%;
+  max-width: 11rem;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  border-radius: 0.25rem;
+  background-color: var(--md-primary-fg-color);
+  border-color: var(--md-primary-fg-color);
+  color: var(--md-primary-bg-color);
+  transition: background-color 160ms, border-color 160ms;
+}
+
+.md-typeset .hero-buttons .md-button:hover {
+  background-color: var(--md-primary-fg-color--light);
+  border-color: var(--md-primary-fg-color--light);
+  color: var(--md-primary-bg-color);
 }
 
 /* ----- CV entries (experience / education) --------------------- */
