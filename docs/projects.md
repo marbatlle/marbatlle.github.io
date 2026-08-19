@@ -55,7 +55,8 @@ England and GenV. This site runs on the same stack.
     patients) found 199 up- and 124 down-regulated genes, and a network spanning
     metabolic reactions, liver protein-protein interactions and pathways
     surfaced four candidates (`LRRC52`, `DLX6`, `DLX5`, `MSX2`) linked to the
-    β-catenin pathway.
+    β-catenin pathway. The upstream meta-analysis and the clustering parameter
+    search each became their own tool, below.
 
     Packaged with Docker and Conda, documented with MkDocs, released under
     AGPL-3.0, and deployed as a code-free tool to the Virtual Research
@@ -85,6 +86,21 @@ England and GenV. This site runs on the same stack.
 ## Bioinformatics tools
 
 <div class="grid cards" markdown>
+
+-   :material-layers-search-outline:{ .lg .middle } **metaDEGs**
+
+    ---
+
+    <span class="card-meta">2022 · R, bash, DESeq2, robust rank aggregation</span>
+
+    Finds the genes that are consistently deregulated across several independent
+    RNA-Seq studies. Takes GEO datasets processed through GREIN, runs
+    differential expression per study with DESeq2, then integrates the resulting
+    gene lists with robust rank aggregation rather than pooling raw counts, so
+    study-level batch effects do not dominate the result. This is the step that
+    produced the input for MultiAffinity.
+
+    [:octicons-mark-github-16: Source on GitHub](https://github.com/marbatlle/metaDEGs)
 
 -   :material-tune-variant:{ .lg .middle } **Optimize-Mod-Resolution**
 

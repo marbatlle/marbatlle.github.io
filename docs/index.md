@@ -55,7 +55,7 @@ interpret genomic results.
 
 ### Interests
 
-- Health data standards
+- Interoperability standards
 - Personalised medicine
 - Growing chillies
 - Exploring Australia
