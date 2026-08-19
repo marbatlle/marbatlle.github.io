@@ -82,9 +82,23 @@ England and GenV. This site runs on the same stack.
 
 </div>
 
-## Bioinformatics
+## Bioinformatics tools
 
 <div class="grid cards" markdown>
+
+-   :material-tune-variant:{ .lg .middle } **Optimize-Mod-Resolution**
+
+    ---
+
+    <span class="card-meta">2022 · Python, bash, pandas, NumPy</span>
+
+    Companion tool to MultiAffinity. Community detection on a multilayer network
+    needs a modularity resolution parameter, and picking it by hand is guesswork.
+    This sweeps a range of values through MolTI-DREAM, filters for communities
+    large enough to count as disease modules, and reports the optimal parameter
+    with the resulting community count and average size.
+
+    [:octicons-mark-github-16: Source on GitHub](https://github.com/marbatlle/Optimize-Mod-Resolution)
 
 -   :material-flask-outline:{ .lg .middle } **SNVs detection pipeline**
 
@@ -95,6 +109,34 @@ England and GenV. This site runs on the same stack.
     Sample pipeline for variant analysis of whole-exome sequencing data.
 
     [:octicons-mark-github-16: View on GitHub](https://github.com/marbatlle/Omics-Snippets/tree/main/SNVs%20Analysis%20Pipe)
+
+</div>
+
+## Practice
+
+<div class="grid cards" markdown>
+
+-   :material-language-python:{ .lg .middle } **Python challenges**
+
+    ---
+
+    <span class="card-meta">Ongoing · Python</span>
+
+    Solutions to problems from Rosalind, LeetCode and Coderbyte. Rosalind in
+    particular is bioinformatics-flavoured, so it doubles as domain practice.
+
+    [:octicons-mark-github-16: Source on GitHub](https://github.com/marbatlle/Python-Challenges)
+
+-   :material-database-outline:{ .lg .middle } **SQL challenges**
+
+    ---
+
+    <span class="card-meta">SQL</span>
+
+    A SQL masterclass, eight case studies and a set of LeetCode problems worked
+    through end to end.
+
+    [:octicons-mark-github-16: Source on GitHub](https://github.com/marbatlle/SQL-Challenges)
 
 -   :material-notebook-outline:{ .lg .middle } **Kaggle notebooks**
 

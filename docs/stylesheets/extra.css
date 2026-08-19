@@ -17,6 +17,11 @@
   --md-primary-fg-color--dark: hsl(225, 15%, 14%);
   --md-primary-bg-color: hsl(225, 15%, 100%);
   --md-primary-bg-color--light: hsla(225, 15%, 100%, 0.7);
+  /* Material binds body link color to primary by default, which would
+     make every link (project card link-outs, cert links, etc.) match
+     the dark grey header - invisible against the dark-mode background
+     until hovered. Use accent (teal) for link text instead. */
+  --md-typeset-a-color: var(--md-accent-fg-color);
 }
 
 /* ----- Hero ---------------------------------------------------- */
