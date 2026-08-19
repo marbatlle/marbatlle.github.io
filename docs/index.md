@@ -33,8 +33,8 @@ hide:
 
 ## Hi there
 
-I work in health data, across bioinformatics, clinical data standards and
-large-scale linkage.
+**I work in health data, across bioinformatics, interoperability and
+large-scale linkage.**
 
 Right now I'm at MCRI in Melbourne, managing perinatal data linkage and
 extraction across Victorian hospitals for GenV, Australia's largest
@@ -61,6 +61,11 @@ and genomic datasets.
 - Personalised medicine and bioinformatics
 - Growing chillies
 - Exploring Australia
+
+<div class="hero-buttons" markdown>
+[Projects](projects.md){ .md-button }
+[Notes](notes/index.md){ .md-button }
+</div>
 
 </div>
 
@@ -209,39 +214,3 @@ Mar 2022
 </div>
 
 </div>
-
----
-
-## Projects
-
-<div class="grid cards" markdown>
-
--   :material-graph-outline:{ .lg .middle } **Multilayer networks for the molecular characterization of hepatoblastoma**
-
-    ---
-
-    MSc thesis. Meta-analysis of five RNA-Seq studies (181 samples, 101 patients)
-    combined with a multilayer network spanning metabolic reactions,
-    protein-protein interactions and pathways, surfacing four candidate genes
-    linked to the β-catenin pathway. Deployed as a code-free tool to the iPC
-    H2020 Virtual Research Environment.
-
-    [:material-file-pdf-box: Read the thesis](files/msc-thesis.pdf)
-
--   :material-dna:{ .lg .middle } **Primer design for transcript and methylation analysis in bovine embryos**
-
-    ---
-
-    BSc thesis, carried out within a Ghent University project on sperm stressors
-    and embryo development. Designed and optimized primers for transcript
-    expression and bisulfite-treated DNA, validated by RT-qPCR, melt curve
-    analysis, gel electrophoresis and Sanger sequencing.
-
-    [:octicons-link-external-24: Read the thesis](http://hdl.handle.net/10256/16406)
-
-</div>
-
-<p class="section-more" markdown>
-Pipelines, data science work and study notes live on the
-[Projects](projects.md) page.
-</p>

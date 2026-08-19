@@ -181,6 +181,19 @@
   border-left: 2px solid var(--md-default-fg-color--lightest);
 }
 
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 1rem;
+}
+
+.md-typeset .hero-buttons .md-button {
+  padding: 0.3rem 0.9rem;
+  font-size: 0.72rem;
+  border-radius: 0.2rem;
+}
+
 /* ----- CV entries (experience / education) --------------------- */
 
 .entry {
