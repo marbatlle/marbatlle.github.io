@@ -175,6 +175,16 @@ Sep 2014 – Jun 2018<br>
 
 <div class="entry" markdown>
 <div class="entry-main" markdown>
+**[Advanced FHIR Terminology :octicons-link-external-16:](https://drive.google.com/file/d/1QVuh441HxwjvTBAJD9_csuuhuuf3fCOA/view?usp=sharing){ target="_blank" }**<br>
+<span class="entry-org">Australian Digital Health Agency</span>
+</div>
+<div class="entry-meta" markdown>
+Sep 2026
+</div>
+</div>
+
+<div class="entry" markdown>
+<div class="entry-main" markdown>
 **[FHIR Implementer: Foundational :octicons-link-external-16:](https://hl7-international.verified.cv/en/verify/60107187861546){ target="_blank" }**<br>
 <span class="entry-org">Health Level Seven International (HL7)</span>
 </div>
