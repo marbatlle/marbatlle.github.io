@@ -70,6 +70,7 @@ nav:
 theme:
   name: material
   custom_dir: overrides
+  favicon: images/favicon.svg
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -89,6 +90,7 @@ theme:
     text: Inter
     code: JetBrains Mono
   icon:
+    logo: material/alpha-m-circle
     repo: fontawesome/brands/github
   features:
     - navigation.instant
