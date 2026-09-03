@@ -10,6 +10,7 @@ docs_dir: docs
 nav:
   - Home: index.md
   - Projects: projects.md
+  - Courses: courses.md
   - Notes:
       - notes/index.md
       - FHIR:
