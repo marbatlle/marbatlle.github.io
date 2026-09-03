@@ -28,6 +28,16 @@ Jun 2026
 
 <div class="entry" markdown>
 <div class="entry-main" markdown>
+**[Tableau Fundamentals :octicons-link-external-16:](https://www.datacamp.com/statement-of-accomplishment/track/3c42c84501e63a264557f38bc1a16d81d6981fcd?raw=1){ target="_blank" }**<br>
+<span class="entry-org">DataCamp</span>
+</div>
+<div class="entry-meta" markdown>
+Nov 2025
+</div>
+</div>
+
+<div class="entry" markdown>
+<div class="entry-main" markdown>
 **[MongoDB University: M001 :octicons-link-external-16:](images/notes/M001_proof_of_completion.jpeg){ target="_blank" }**<br>
 <span class="entry-org">MongoDB University</span>
 </div>
@@ -58,7 +68,17 @@ Dec 2020
 
 <div class="entry" markdown>
 <div class="entry-main" markdown>
-**[Learn Git :octicons-link-external-16:](https://www.codecademy.com/profiles/netNinja82250/certificates/a8ab218d5950c29861635cc0bf12fd13){ target="_blank" }**<br>
+**[Learn Git & GitHub :octicons-link-external-16:](https://www.codecademy.com/profiles/netNinja82250/certificates/a8ab218d5950c29861635cc0bf12fd13){ target="_blank" }**<br>
+<span class="entry-org">Codecademy</span>
+</div>
+<div class="entry-meta" markdown>
+Dec 2020
+</div>
+</div>
+
+<div class="entry" markdown>
+<div class="entry-main" markdown>
+**[Learn Bash Scripting :octicons-link-external-16:](https://www.codecademy.com/profiles/netNinja82250/certificates/37c55263a9f1b1f7603f7551c293ecbd){ target="_blank" }**<br>
 <span class="entry-org">Codecademy</span>
 </div>
 <div class="entry-meta" markdown>
