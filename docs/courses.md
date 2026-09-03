@@ -32,27 +32,7 @@ Jun 2026
 <span class="entry-org">MongoDB University</span>
 </div>
 <div class="entry-meta" markdown>
-2021
-</div>
-</div>
-
-<div class="entry" markdown>
-<div class="entry-main" markdown>
-**[Learn SQL :octicons-link-external-16:](https://www.codecademy.com/profiles/netNinja82250/certificates/042a4e5884e3eb6ea1f2a12be6abb851){ target="_blank" }**<br>
-<span class="entry-org">Codecademy</span>
-</div>
-<div class="entry-meta" markdown>
-2021
-</div>
-</div>
-
-<div class="entry" markdown>
-<div class="entry-main" markdown>
-**[Learn Git :octicons-link-external-16:](https://www.codecademy.com/profiles/netNinja82250/certificates/a8ab218d5950c29861635cc0bf12fd13){ target="_blank" }**<br>
-<span class="entry-org">Codecademy</span>
-</div>
-<div class="entry-meta" markdown>
-2021
+Sep 2021
 </div>
 </div>
 
@@ -63,5 +43,25 @@ Jun 2026
 </div>
 <div class="entry-meta" markdown>
 2021
+</div>
+</div>
+
+<div class="entry" markdown>
+<div class="entry-main" markdown>
+**[Learn SQL :octicons-link-external-16:](https://www.codecademy.com/profiles/netNinja82250/certificates/042a4e5884e3eb6ea1f2a12be6abb851){ target="_blank" }**<br>
+<span class="entry-org">Codecademy</span>
+</div>
+<div class="entry-meta" markdown>
+Dec 2020
+</div>
+</div>
+
+<div class="entry" markdown>
+<div class="entry-main" markdown>
+**[Learn Git :octicons-link-external-16:](https://www.codecademy.com/profiles/netNinja82250/certificates/a8ab218d5950c29861635cc0bf12fd13){ target="_blank" }**<br>
+<span class="entry-org">Codecademy</span>
+</div>
+<div class="entry-meta" markdown>
+Dec 2020
 </div>
 </div>
